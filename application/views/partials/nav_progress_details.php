@@ -121,62 +121,43 @@
 
 
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumb">
-                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="CEP 2020 Jan"
-                   data-image="<?php echo base_url(); ?>assets/new/img/01.jpg"
-                   data-target="#image-gallery">
-                    <img class="img-thumbnail"
-                         src="<?php echo base_url(); ?>assets/new/img/01.jpg"
-                         alt="Another alt text">
+            
 
-                    <h5><center><b>CEP 2020 Jan</b></center></h5></a>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumb">
-                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="CEP 2020 Feb"
-                   data-image="<?php echo base_url(); ?>assets/new/img/02.jpg"
-                   data-target="#image-gallery">
-                    <img class="img-thumbnail"
-                         src="<?php echo base_url(); ?>assets/new/img/02.jpg"
-                         alt="Another alt text">
+            <?php
+                            if ($project_image_fetch_data->num_rows() > 0) {
+                                foreach ($project_image_fetch_data->result() as $row) {
+                                ?>
+                                <?php if ($row->UserName == $this->session->userdata('username')) { ?>
 
-                    <h5><center><b>CEP 2020 Feb</b></center></h5></a>
-                </a>
-            </div>
+                                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumb">
 
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumb">
-                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="CEP 2020 Mar"
-                   data-image="<?php echo base_url(); ?>assets/new/img/03.jpg"
-                   data-target="#image-gallery">
-                    <img class="img-thumbnail"
-                         src="<?php echo base_url(); ?>assets/new/img/03.jpg"
-                         alt="Another alt text">
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $row->ProjectCode ?> <?php echo $row->LocationCode ?> <?php echo $row->ImgDate ?>"
+                                    data-image="<?php echo $row->Image ?>"
+                                    data-target="#image-gallery">
 
-                    <h5><center><b>CEP 2020 Mar</b></center></h5></a>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumb">
-                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="CEP 2020 Apr"
-                   data-image="<?php echo base_url(); ?>assets/new/img/04.jpg"
-                   data-target="#image-gallery">
-                    <img class="img-thumbnail"
-                         src="<?php echo base_url(); ?>assets/new/img/04.jpg"
-                         alt="Another alt text">
+                                    <img class="img-thumbnail"
+                                    src="<?php echo $row->Image ?>"
+                                    alt="Another alt text">
 
-                    <h5><center><b>CEP 2020 Apr</b></center></h5></a>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumb">
-                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="CEP 2020 May"
-                   data-image="<?php echo base_url(); ?>assets/new/img/05.png"
-                   data-target="#image-gallery">
-                    <img class="img-thumbnail"
-                         src="<?php echo base_url(); ?>assets/new/img/05.png"
-                         alt="Another alt text">
+                                    <h5><center><b><?php echo $row->ProjectCode ?> <?php echo $row->LocationCode ?> <?php echo $row->ImgDate ?></b></center></h5></a>
+                                    </a>
+            
+                                    </div>
+                                
+                                <?php
+                                }
+                                }
+                            } else {
+                            ?>
 
-                    <h5><center><b>CEP 2020 May</b></center></h5></a>
-                </a>
-            </div>
+                    <?php } ?>
+
+
+        </div>
+
+            
+            
+            
 
 
 
