@@ -393,7 +393,7 @@ display:none;
   <div class="sidenav">
    
             <div class="">
-         <a href="../Home/PpvsHome"><img class="main-logo" style="margin-left:40px"
+         <a href="<?php echo base_url(); ?>index.php/Home/PpvsHome"><img class="main-logo" style="margin-left:40px"
                         src="<?php echo base_url(); ?>assets/new/img/logo/logo.jpg" alt="" /></a>
                
             </div>
@@ -406,7 +406,7 @@ display:none;
                         <?php if ($this->session->userdata('ProjectView') == "checked") { ?>
                         <li>
 
-                            <a href="../Project/projects" <?php if (uri_string() == 'Project/projects') { ?>
+                            <a href="<?php echo base_url(); ?>index.php/Project/projects" <?php if (uri_string() == 'Project/projects') { ?>
                                 style="color:#337ab7; border:outset" <?php } ?>>
                                 <img src="<?php echo base_url(); ?>assets/new/img/BodyPNG/project.png">
                                 <span class="mini-click-non" style='font-size:12px;'>Projects</span>
@@ -417,7 +417,7 @@ display:none;
                         } ?>
                         <?php if ($this->session->userdata('LocationView') == "checked") { ?>
                         <li>
-                            <a href="../Location/ClearLacation" <?php if (uri_string() == 'Location/locationView') { ?>
+                            <a href="<?php echo base_url(); ?>index.php/Location/ClearLacation" <?php if (uri_string() == 'Location/locationView') { ?>
                                 style="color:#337ab7;border:outset" <?php } ?> aria-expanded="false">
                                 <img src="<?php echo base_url(); ?>assets/new/img/BodyPNG/location.png"> <span
                                     class="mini-click-non" style='font-size:12px;'>Location</span></a>
@@ -427,7 +427,7 @@ display:none;
 
                         <?php if ($this->session->userdata('UserView') == "checked") { ?>
                         <li>
-                            <a href="../User/users"
+                            <a href="<?php echo base_url(); ?>index.php/User/users"
                                 <?php if (uri_string() == 'User/users' || uri_string() == 'Permission/permissionView' || uri_string() == 'Assign/assignView') { ?>
                                 style="color:#337ab7;border:outset" <?php } ?> aria-expanded="false"></span>
                                 <img src="<?php echo base_url(); ?>assets/new/img/BodyPNG/User.png">
@@ -441,7 +441,7 @@ display:none;
 
                         <?php if ($this->session->userdata('ProgressView') == "checked") { ?>
                         <li>
-                            <a href="../Progress/progresses" <?php if (uri_string() == 'Progress/progresses') { ?>
+                            <a href="<?php echo base_url(); ?>index.php/Progress/progresses" <?php if (uri_string() == 'Progress/progresses') { ?>
                                 style="color:#337ab7;border:outset" <?php } ?>>
                                 <img src="<?php echo base_url(); ?>assets/new/img/BodyPNG/report.png">
                                 <span class="mini-click-non" style='font-size:12px;'>Project Progress</span>
@@ -453,7 +453,7 @@ display:none;
 
 
                         <li>
-                            <a href="../Home/PpvsHome" <?php if (uri_string() == 'Home/PpvsHome') { ?>
+                            <a href="<?php echo base_url(); ?>index.php/Home/PpvsHome" <?php if (uri_string() == 'Home/PpvsHome') { ?>
                                 style="color:#337ab7;border:outset" <?php } ?>></span>
                                 <img src="<?php echo base_url(); ?>assets/new/img/BodyPNG/Home.png">
                                 <span class="mini-click-non" style='font-size:12px;'>Home</span></a>
@@ -503,7 +503,7 @@ display:none;
 
                                             <?php if ($this->session->userdata('ProjectView') == "checked") { ?>
                                             <li><a data-toggle="collapse" data-target="#Charts"
-                                                    href="../Project/projects">Projects
+                                                    href="<?php echo base_url(); ?>index.php/Project/projects">Projects
                                                     <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                                 <ul class="collapse dropdown-header-top">
 
@@ -513,7 +513,7 @@ display:none;
                                             } ?>
                                             <?php if ($this->session->userdata('LocationView') == "checked") { ?>
                                             <li><a data-toggle="collapse" data-target="#demoevent"
-                                                    href="../Location/ClearLacation">Location
+                                                    href="<?php echo base_url(); ?>index.php/Location/ClearLacation">Location
                                                     <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                                 <ul id="demoevent" class="collapse dropdown-header-top">
 
@@ -523,7 +523,7 @@ display:none;
                                             } ?>
                                             <?php if ($this->session->userdata('UserView') == "checked") { ?>
                                             <li><a data-toggle="collapse" data-target="#demopro"
-                                                    href="../User/users">Users
+                                                    href="<?php echo base_url(); ?>index.php/User/users">Users
                                                     <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                                 <ul id="demopro" class="collapse dropdown-header-top">
 
@@ -534,7 +534,7 @@ display:none;
 
                                             <?php if ($this->session->userdata('ProgressView') == "checked") { ?>
                                             <li><a data-toggle="collapse" data-target="#demopro1"
-                                                    href="../Progress/progresses">Project Progress
+                                                    href="<?php echo base_url(); ?>index.php/Progress/progresses">Project Progress
                                                     <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                                 <ul id="demopro" class="collapse dropdown-header-top">
 
@@ -545,7 +545,7 @@ display:none;
 
                                             
                                             <li><a data-toggle="collapse" data-target="#formsmob"
-                                                    href="../Home/PpvsHome">Home <span
+                                                    href="<?php echo base_url(); ?>index.php/Home/PpvsHome">Home <span
                                                         class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                                 <ul id="formsmob" class="collapse dropdown-header-top">
 
