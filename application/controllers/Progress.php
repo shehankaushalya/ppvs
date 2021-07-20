@@ -94,7 +94,9 @@ class Progress extends CI_Controller
                 // $data = array('upload_data' => $this->upload->data());
                 
                 $upload_data = $this->upload->data();
-                $file_path = $upload_data['full_path'];
+                //$file_path = $upload_data['file_path'];
+
+                $file_path = base_url().'/uploads/images/'.$upload_data['file_name'];
                 
                 // $this->load->view('progress', $data);
                 // print_r($this->upload->data());
@@ -235,14 +237,14 @@ class Progress extends CI_Controller
 
 
 
-    public function project_progress_view()
-    {
+    // public function project_progress_view()
+    // {
 
-            $this->load->model("Model_progress");
-            $data["project_progress_fetch_data"] = $this->Model_progress->project_progress_fetch_data();
-            $this->load->view('PpvsHome', $data);
+    //         $this->load->model("Model_progress");
+    //         $data["project_progress_fetch_data"] = $this->Model_progress->project_progress_fetch_data();
+    //         $this->load->view('PpvsHome', $data);
         
-    }
+    // }
 
 
     // public function project_item_view()
@@ -258,21 +260,21 @@ class Progress extends CI_Controller
 
     
 
-    public function project_location_view()
-    {
+    // public function project_location_view()
+    // {
 
-            $this->load->model("Model_progress");
-            $data["project_location_fetch_data"] = $this->Model_progress->project_location_fetch_data();
-            $this->load->view('LocationView', $data);
+    //         $this->load->model("Model_progress");
+    //         $data["project_location_fetch_data"] = $this->Model_progress->project_location_fetch_data();
+    //         $this->load->view('LocationView', $data);
         
-    }
+    // }
 
-    public function project_image_view()
-    {
+    // public function project_image_view()
+    // {
 
-            $this->load->model("Model_progress");
-            $data["progress_fetch_data"] = $this->Model_progress->progress_fetch_data();
-            $this->load->view('ImageView', $data);
+    //         $this->load->model("Model_progress");
+    //         $data["progress_fetch_data"] = $this->Model_progress->progress_fetch_data();
+    //         $this->load->view('ImageView', $data);
         
-    }
+    // }
 }
