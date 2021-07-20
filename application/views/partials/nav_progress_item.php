@@ -110,7 +110,7 @@
                                 <!-- <br><h5><center><b>Bridge --- <?php echo($product_id); ?></b></center></h5></a>    -->
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <a><center><img src="<?php echo base_url(); ?>assets/new/img/2.png"></center>
+                    <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Culvert/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/2.png"></center>
                                 <br><h5><center><b>Culvert</b></center></h5></a>  
                     </div>
                     
@@ -122,12 +122,12 @@
                 <div class="row">
 
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <a><center><img src="<?php echo base_url(); ?>assets/new/img/3.png"></center>
+                    <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Embankment/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/3.png"></center>
                                 <br><h5><center><b>Embankment</b></center></h5></a>  
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <a><center><img src="<?php echo base_url(); ?>assets/new/img/4.png"></center>
-                                <br><h5><center><b>Retaining Wall</b></center></h5></a>    
+                    <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Retaining_Wall/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/4.png"></center>
+                                <br><h5><center><b>Retaining_Wall</b></center></h5></a>    
                     </div>
                     
 
