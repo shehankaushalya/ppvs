@@ -186,9 +186,9 @@ class Model_progress extends CI_Model
         // return $query;
     }
 
-    function project_image_fetch_data($item_code, $project_code, $location_code)
+    function project_image_fetch_data($item_code, $project_code, $location_code, $status)
     {
-        $query = $this->db->query("SELECT * FROM progressmaster LEFT JOIN userproject ON progressmaster.ProjectCode=userproject.ProjectCode where userproject.status='checked' && progressmaster.ProjectCode='$project_code' && progressmaster.PhotoItem='$item_code' && progressmaster.LocationCode='$location_code'");
+        $query = $this->db->query("SELECT * FROM progressmaster LEFT JOIN userproject ON progressmaster.ProjectCode=userproject.ProjectCode where userproject.status='checked' && progressmaster.ProjectCode='$project_code' && progressmaster.PhotoItem='$item_code' && progressmaster.LocationCode='$location_code' && progressmaster.Status='$status'");
         return $query;
         // $query = $this->db->query("SELECT DISTINCT progressmaster.ProjectCode, progressmaster.LocationCode, progressmaster.Image, progressmaster.ImgDate, userproject.UserName FROM progressmaster LEFT JOIN userproject ON progressmaster.ProjectCode=userproject.ProjectCode where userproject.status='checked' && progressmaster.ProjectCode='$project_code' && progressmaster.PhotoItem='$item_code' && progressmaster.LocationCode='$location_code'");
         // return $query;
