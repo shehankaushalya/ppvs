@@ -132,11 +132,11 @@
                                     onchange="document.getElementById('D_E_Status').value=this.options[this.selectedIndex].text; 
                                     document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
                                         <option value="-1"></option>
-                                        <option>Not Yet Started
+                                        <option>Not_Yet_Started
                                                                                              </option>
                                                                                              <option>Initiated
                                                                                              </option>
-                                                                                             <option>Work In Progress
+                                                                                             <option>Work_In_Progress
                                                                                              </option>
                                                                                              <option>Completed
                                                                                              </option>
