@@ -172,10 +172,11 @@ class Progress extends CI_Controller
         $LocationCode = $this->input->post('LocationCode');
         $Status = $this->input->post('Status');
         $PhotoItem = $this->input->post('PhotoItem');
-        $Image = $this->input->post('Image');
+        // $Image = $this->input->post('Image');
         $ImgDate = $this->input->post('ImgDate');
         $this->load->model("Model_progress");
-        $this->Model_progress->update_records($PpdCode, $ProjectCode, $LocationCode, $Status, $PhotoItem, $Image, $ImgDate);
+        // $this->Model_progress->update_records($PpdCode, $ProjectCode, $LocationCode, $Status, $PhotoItem, $Image, $ImgDate);
+        $this->Model_progress->update_records($PpdCode, $ProjectCode, $LocationCode, $Status, $PhotoItem, $ImgDate);
         
         $this->session->set_flashdata('msg', 'Data updated successfully.');
         redirect('Progress/progresses');
