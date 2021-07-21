@@ -105,7 +105,7 @@
                                     <div class="row" style="margin-top: 30px">
                                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                    <a class="btn btn-primary btn-block btn-lg" href="<?php echo base_url(); ?>index.php/Home/ImageView/<?php echo($item_code); ?>/<?php echo($project_code); ?>/<?php echo $row->LocationCode ?>" role="button">
+                                    <a class="btn btn-primary btn-block btn-lg" href="<?php echo base_url(); ?>index.php/Home/ImageView/<?php echo($item_code); ?>/<?php echo($project_code); ?>/<?php echo $row->LocationCode ?>/<?php echo $row->Status ?>" role="button">
                                     <?php echo $row->LocationCode  ?> 
                                     </a>
                                     </div>
