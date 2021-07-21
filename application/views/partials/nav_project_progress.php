@@ -282,11 +282,11 @@ $(function() {
                                                                                          <select class="form-control"
                                                                                              id="status1" name="status" >
                                                                                              
-                                                                                             <option>Not Yet Started
+                                                                                             <option>Not_Yet_Started
                                                                                              </option>
                                                                                              <option>Initiated
                                                                                              </option>
-                                                                                             <option>Work In Progress
+                                                                                             <option>Work_In_Progress
                                                                                              </option>
                                                                                              <option>Completed
                                                                                              </option>
