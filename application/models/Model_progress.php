@@ -107,10 +107,10 @@ class Model_progress extends CI_Model
         return $result;
     }
 
-    public function update_records($PpdCode, $ProjectCode, $LocationCode, $Status, $PhotoItem, $Image, $ImgDate)
+    public function update_records($PpdCode, $ProjectCode, $LocationCode, $Status, $PhotoItem, $ImgDate)
     {
         $this->db->query("update progressmaster set ProjectCode = '$ProjectCode', LocationCode='$LocationCode', 
-        Status ='$Status', PhotoItem ='$PhotoItem', Image ='$Image', ImgDate='$ImgDate' where PpdCode='$PpdCode' ");
+        Status ='$Status', PhotoItem ='$PhotoItem', ImgDate='$ImgDate' where PpdCode='$PpdCode' ");
     }
     public function deletedata($PpdCode)
     {
