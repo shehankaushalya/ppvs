@@ -118,23 +118,6 @@
         </div>
     </div>
 </div>
-
-            <br>
-            <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12"></div>
-            <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
-                <center>
-                    <img class="main-logo" src="<?php echo base_url(); ?>assets/new/img/logo/logo.png" alt="nem_logo.jpg" style="height:100px" />
-                    <h5>NEM Construction (Pvt) Ltd <br>
-                    Project Progress Visualization System</h5>
-
-                </center>
-            <br>
-
-            </div>
-
-
-
-
 </div>
 <!-- </div>
 </div> -->
