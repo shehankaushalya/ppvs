@@ -208,8 +208,9 @@
                                     <label class="login2">Photo Capturing Date</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                    <input type="text" class="form-control" placeholder="Enter Photo Capturing Date" name="ImgDate"
-                                        id="V_E_ImgDate"/>
+                                    <input type="date" class="form-control" id="V_E_ImgDate" name="ImgDate" />
+                                    <!-- <input type="text" class="form-control" placeholder="Enter Photo Capturing Date" name="ImgDate"
+                                        id="V_E_ImgDate"/> -->
                                 </div>
                             </div>
                         </div>
