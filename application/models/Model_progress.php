@@ -179,7 +179,7 @@ class Model_progress extends CI_Model
     function project_location_fetch_data($item_code, $project_code)
     {
         
-        $query = $this->db->query("SELECT * FROM progressmaster LEFT JOIN userproject ON progressmaster.ProjectCode=userproject.ProjectCode where userproject.status='checked' && progressmaster.ProjectCode='$project_code' && progressmaster.PhotoItem='$item_code'");
+        $query = $this->db->query("SELECT progressmaster.ProjectCode, progressmaster.LocationCode, progressmaster.Status, MAX(progressmaster.ImgDate), userproject.UserName FROM progressmaster LEFT JOIN userproject ON progressmaster.ProjectCode=userproject.ProjectCode where userproject.status='checked' && progressmaster.ProjectCode='$project_code' && progressmaster.PhotoItem='$item_code'");
         return $query;
 
         // $query = $this->db->query("SELECT DISTINCT progressmaster.ProjectCode, progressmaster.LocationCode, progressmaster.Status, userproject.UserName FROM progressmaster LEFT JOIN userproject ON progressmaster.ProjectCode=userproject.ProjectCode where userproject.status='checked' && progressmaster.ProjectCode='$project_code' && progressmaster.PhotoItem='$item_code'");
