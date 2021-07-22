@@ -78,7 +78,7 @@
             <div class="sparkline13-hd">
                 <div class="main-sparkline13-hd">
                     
-                <div class="row" style="margin-top: 100px">
+                <div class="row" style="margin-top: 60px">
 
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">

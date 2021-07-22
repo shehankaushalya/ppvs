@@ -83,7 +83,7 @@
                         <h3 style="color:#337ab7;text-align: center;">Projects</h3>
                     </div>
 
-                <div class="row" style="margin-top: 70px">
+                <div class="row" style="margin-top: 60px">
 
                     
                         
@@ -92,7 +92,7 @@
                                 foreach ($project_progress_fetch_data->result() as $row) {
                                 ?>
                                 <?php if ($row->UserName == $this->session->userdata('username')) { ?>
-                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-top: 20px;">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-top: 17px;">
                                     <a class="btn btn-primary btn-block btn-lg" href="../Home/ItemView/<?php echo $row->ProjectCode  ?>" role="button">
                                     <?php echo $row->ProjectCode  ?>
                                     </a> 
@@ -114,7 +114,7 @@
                 </div>
 
                 
-                <br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
 
 
             </div>

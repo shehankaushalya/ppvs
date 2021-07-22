@@ -85,19 +85,18 @@
                                                                                  <div class="row">
                                                                                      <div
                                                                                          class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                                                         <label
-                                                                                             class="login2">Project</label>
+                                                                                         <h3 style="color:#337ab7;text-align: center;">Project</h3>
                                                                                      </div>
                                                                                      <div
                                                                                          class="col-lg-8 col-md-8 col-sm-8 col-xs-12" name="ProjectCode">
-                                                                                         <?php echo($project_code); ?>
+                                                                                         <h3 style="text-align: center;"><?php echo($project_code); ?></h3>
 
                                                                                      </div>
                                                                                  </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 
-                    <br><br>
+                    <br>
             </div>
         </div>
 <br><br><br><br>
@@ -106,12 +105,12 @@
 
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                         <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Bridge/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/1.png"></center>
-                                <br><h5><center><b>Bridge</b></center></h5></a>
+                                <br><h4><center><b>Bridge</b></center></h4></a>
                                 <!-- <br><h5><center><b>Bridge --- <?php echo($product_id); ?></b></center></h5></a>    -->
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                     <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Culvert/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/2.png"></center>
-                                <br><h5><center><b>Culvert</b></center></h5></a>  
+                                <br><h4><center><b>Culvert</b></center></h4></a>  
                     </div>
                     
 
@@ -123,11 +122,11 @@
 
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                     <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Embankment/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/3.png"></center>
-                                <br><h5><center><b>Embankment</b></center></h5></a>  
+                                <br><h4><center><b>Embankment</b></center></h4></a>  
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                     <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Retaining_Wall/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/4.png"></center>
-                                <br><h5><center><b>Retaining_Wall</b></center></h5></a>    
+                                <br><h4><center><b>Retaining_Wall</b></center></h4></a>    
                     </div>
                     
 
