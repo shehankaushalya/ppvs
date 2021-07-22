@@ -180,6 +180,7 @@ class Model_progress extends CI_Model
     {
         
         $query = $this->db->query("SELECT * FROM progressmaster LEFT JOIN userproject ON progressmaster.ProjectCode=userproject.ProjectCode where userproject.status='checked' && progressmaster.ProjectCode='$project_code' && progressmaster.PhotoItem='$item_code'");
+        return $query;
 
         // $query = $this->db->query("SELECT DISTINCT progressmaster.ProjectCode, progressmaster.LocationCode, progressmaster.Status, userproject.UserName FROM progressmaster LEFT JOIN userproject ON progressmaster.ProjectCode=userproject.ProjectCode where userproject.status='checked' && progressmaster.ProjectCode='$project_code' && progressmaster.PhotoItem='$item_code'");
         // return $query;
