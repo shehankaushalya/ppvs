@@ -360,12 +360,14 @@ $(function() {
                                                                                      </div>
                                                                                      <div
                                                                                          class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                                                         <input type="text"
+                                                                                         <input type="date" class="form-control" id="imgdate1"
+                                                                                            name="imgdate" required />
+                                                                                         <!-- <input type="text"
                                                                                              class="form-control"
                                                                                              placeholder="Enter Photo Capturing Date"
                                                                                              name="imgdate"
                                                                                              id="imgdate1" 
-                                                                                             required />
+                                                                                             required /> -->
                                                                                      </div>
                                                                                  </div>
                                                                              </div>
