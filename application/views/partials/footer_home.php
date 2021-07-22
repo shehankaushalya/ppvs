@@ -993,8 +993,8 @@ $(function() {
                 remote: '<span style="color:red">Please upload an Image</span>'
             },
             imgdate: {
-                required: '<span style="color:red" >Please enter Image Date</span>',
-                remote: '<span style="color:red">Please enter a valid Image Date</span>'
+                required: '<span style="color:red" >Please select Image Date</span>',
+                remote: '<span style="color:red">Please select a valid Image Date</span>'
             }
 
 
@@ -1068,7 +1068,7 @@ $(function() {
                 required: '<span style="color:red">Please upload an Image</span>'
             },
             ImgDate: {
-                required: '<span style="color:red">Please enter Image Date</span>'
+                required: '<span style="color:red">Please select Image Date</span>'
             }
 
         },
@@ -1140,7 +1140,7 @@ $(function() {
                 required: '<span style="color:red">Please upload an Image</span>'
             },
             ImgDate: {
-                required: '<span style="color:red">Please enter Image Date</span>'
+                required: '<span style="color:red">Please select Image Date</span>'
             }
 
         },
@@ -1208,7 +1208,7 @@ $(function() {
                 required: '<span style="color:red">Please upload an Image</span>'
             },
             ImgDate: {
-                required: '<span style="color:red">Please enter Image Date</span>'
+                required: '<span style="color:red">Please select Image Date</span>'
             }
 
         },
