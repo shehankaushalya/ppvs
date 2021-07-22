@@ -83,7 +83,7 @@
                         <h3 style="color:#337ab7;text-align: center;">Projects</h3>
                     </div>
 
-                <div class="row" style="margin-top: 100px">
+                <div class="row" style="margin-top: 70px">
 
                     
                         
@@ -113,19 +113,35 @@
                 
                 </div>
 
+                
+                <br><br><br><br><br><br><br><br><br><br><br>
+
 
             </div>
         </div>
     </div>
 </div>
+
 </div>
 <!-- </div>
 </div> -->
 
 
 
+
+
 <div class="footer-copyright-area" style="background-color:#fff">
 
+                <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12"></div>
+                <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+                    <center>
+                        <img class="main-logo" src="<?php echo base_url(); ?>assets/new/img/logo/logo.png" alt="logo.png" style="height:100px" />
+                        <h5>NEM Construction (Pvt) Ltd <br>
+                        Project Progress Visualization System</h5>
+
+                    </center>
+                <br>
+                </div>
 
     <br>
     <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12"></div>
