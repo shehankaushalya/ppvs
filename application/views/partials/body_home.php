@@ -397,6 +397,7 @@ display:none;
                         src="<?php echo base_url(); ?>assets/new/img/logo/logo.jpg" alt="" /></a>
                
             </div>
+            <br>
 
             <div class="">
                 <nav class="sidebar-nav left-sidebar-menu-pro">
