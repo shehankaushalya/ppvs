@@ -82,7 +82,7 @@
 
         
                 <div class="main-sparkline13-hd">
-                    <br><br><br>
+                    <br><br><br><br>
 
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -101,10 +101,10 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 
-                    <br>
+                    
             </div>
         </div>
-<br><br><br><br>
+
         <div class="main-sparkline13-hd">
                     <div class="row">
 
