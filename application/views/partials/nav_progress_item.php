@@ -40,8 +40,13 @@
                                 <div class="basic-login-form-ad">
                                     <div class="row">
                                         <div class="header-top-area" style="background-color:white">
-                                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                            
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                <center><h2 style="color:black;text-align: center;">Project Progress Visualization System</h2></center>
                                             </div>
+                                        
+
                                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                                                 <button type="button" href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="btn btn-link">
                                                     <span class="step"><?php echo $this->session->userdata('name')[0]; ?></span><br></button>
@@ -103,12 +108,12 @@
         <div class="main-sparkline13-hd">
                     <div class="row">
 
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Bridge/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/1.png"></center>
                                 <br><h4><center><b>Bridge</b></center></h4></a>
                                 <!-- <br><h5><center><b>Bridge --- <?php echo($product_id); ?></b></center></h5></a>    -->
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Culvert/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/2.png"></center>
                                 <br><h4><center><b>Culvert</b></center></h4></a>  
                     </div>
@@ -120,11 +125,11 @@
 
                 <div class="row">
 
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Embankment/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/3.png"></center>
                                 <br><h4><center><b>Embankment</b></center></h4></a>  
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Retaining_Wall/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/4.png"></center>
                                 <br><h4><center><b>Retaining_Wall</b></center></h4></a>    
                     </div>
