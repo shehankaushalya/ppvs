@@ -783,63 +783,63 @@ for (var i = 2; i < table.rows.length; i++) {
         document.getElementById("V_V_LocationCode").value = this.cells[0].innerHTML;
         document.getElementById("V_V_Description").value = this.cells[2].innerHTML;
         document.getElementById("V_V_ProjectName").value = this.cells[3].innerHTML;
-        document.getElementById("V_V_Status").value = this.cells[5].innerHTML;
+        document.getElementById("V_V_Status").value = this.cells[4].innerHTML;
 
 
         document.getElementById("V_E_Location").value = this.cells[1].innerHTML;
         document.getElementById("V_E_LocationCode").value = this.cells[0].innerHTML;
         document.getElementById("V_E_Description").value = this.cells[2].innerHTML;
         document.getElementById("V_E_ProjectName").value = this.cells[3].innerHTML;
-        document.getElementById("V_E_Status").value = this.cells[5].innerHTML;
+        document.getElementById("V_E_Status").value = this.cells[4].innerHTML;
 
 
         document.getElementById("V_D_Location").value = this.cells[1].innerHTML;
         document.getElementById("V_D_LocationCode").value = this.cells[0].innerHTML;
         document.getElementById("V_D_Description").value = this.cells[2].innerHTML;
         document.getElementById("V_D_ProjectName").value = this.cells[3].innerHTML;
-        document.getElementById("V_D_Status").value = this.cells[5].innerHTML;
+        document.getElementById("V_D_Status").value = this.cells[4].innerHTML;
 
 
         document.getElementById("E_V_Location").value = this.cells[1].innerHTML;
         document.getElementById("E_V_LocationCode").value = this.cells[0].innerHTML;
         document.getElementById("E_V_Description").value = this.cells[2].innerHTML;
         document.getElementById("E_V_ProjectName").value = this.cells[3].innerHTML;
-        document.getElementById("E_V_Status").value = this.cells[5].innerHTML;
+        document.getElementById("E_V_Status").value = this.cells[4].innerHTML;
 
 
         document.getElementById("E_E_Location").value = this.cells[1].innerHTML;
         document.getElementById("E_E_LocationCode").value = this.cells[0].innerHTML;
         document.getElementById("E_E_Description").value = this.cells[2].innerHTML;
         document.getElementById("E_E_ProjectName").value = this.cells[3].innerHTML;
-        document.getElementById("E_E_Status").value = this.cells[5].innerHTML;
+        document.getElementById("E_E_Status").value = this.cells[4].innerHTML;
 
 
         document.getElementById("E_D_Location").value = this.cells[1].innerHTML;
         document.getElementById("E_D_LocationCode").value = this.cells[0].innerHTML;
         document.getElementById("E_D_Description").value = this.cells[2].innerHTML;
         document.getElementById("E_D_ProjectName").value = this.cells[3].innerHTML;
-        document.getElementById("E_D_Status").value = this.cells[5].innerHTML;
+        document.getElementById("E_D_Status").value = this.cells[4].innerHTML;
 
 
         document.getElementById("D_V_Location").value = this.cells[1].innerHTML;
         document.getElementById("D_V_LocationCode").value = this.cells[0].innerHTML;
         document.getElementById("D_V_Description").value = this.cells[2].innerHTML;
         document.getElementById("D_V_ProjectName").value = this.cells[3].innerHTML;
-        document.getElementById("D_V_Status").value = this.cells[5].innerHTML;
+        document.getElementById("D_V_Status").value = this.cells[4].innerHTML;
 
 
         document.getElementById("D_E_Location").value = this.cells[1].innerHTML;
         document.getElementById("D_E_LocationCode").value = this.cells[0].innerHTML;
         document.getElementById("D_E_Description").value = this.cells[2].innerHTML;
         document.getElementById("D_E_ProjectName").value = this.cells[3].innerHTML;
-        document.getElementById("D_E_Status").value = this.cells[5].innerHTML;
+        document.getElementById("D_E_Status").value = this.cells[4].innerHTML;
 
 
         document.getElementById("D_D_Location").value = this.cells[1].innerHTML;
         document.getElementById("D_D_LocationCode").value = this.cells[0].innerHTML;
         document.getElementById("D_D_Description").value = this.cells[2].innerHTML;
         document.getElementById("D_D_ProjectName").value = this.cells[3].innerHTML;
-        document.getElementById("D_D_Status").value = this.cells[5].innerHTML;
+        document.getElementById("D_D_Status").value = this.cells[4].innerHTML;
 
 
     };
