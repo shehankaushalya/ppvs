@@ -98,7 +98,7 @@ class Model_location extends CI_Model
 
     public function update_records($LocationCode, $Location, $Description, $ProjectCode, $Status)
     {
-        $this->db->query("update locationsubmaster set Location='$Location',Description='$Description',ProjectCode='$ProjectCode',ProjectName=(Select ProjectName From projectmaster where ProjectCode = '$ProjectCode'), Status='$Status',  where LocationCode='$LocationCode' ");
+        $this->db->query("update locationsubmaster set Location='$Location',Description='$Description',ProjectCode='$ProjectCode',ProjectName=(Select ProjectName From projectmaster where ProjectCode = '$ProjectCode'), Status='$Status'  where LocationCode='$LocationCode' ");
     }
 
     public function deletedata($LocationCode)
