@@ -82,7 +82,7 @@
 
                                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
                                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                                                <center><h2 style="color:black;text-align: center;">Project Progress Visualization System</h2></center>
+                                                <center><h2 style="color:black;text-align: center;">NEM Project Progress Visualization System</h2></center>
                                             </div>
                                             
                                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
