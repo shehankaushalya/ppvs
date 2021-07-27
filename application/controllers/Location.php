@@ -88,7 +88,7 @@ class Location extends CI_Controller
         $ProjectCode = $this->input->post('ProjectCode');
         $Status = $this->input->post('Status');
         $this->load->model('Model_location');
-        $this->Model_location->update_records($LocationCode, $Location, $Description, $ProjectCode);
+        $this->Model_location->update_records($LocationCode, $Location, $Description, $ProjectCode, $Status);
         $this->session->set_flashdata('msg', 'Data updated successfully.');
         redirect('Location/locationView');
     }
