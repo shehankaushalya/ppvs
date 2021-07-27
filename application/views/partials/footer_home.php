@@ -958,9 +958,9 @@ $(function() {
             locationcode: {
                 select: true,
             },
-            status: {
-                required: true,
-            },
+            // status: {
+            //     required: true,
+            // },
             photoitem: {
                 required: true,
             },
@@ -980,10 +980,10 @@ $(function() {
                 remote: '<span style="color:red">PPD Code already exits</span>'
             },
             
-            status: {
-                required: '<span style="color:red" >Please enter Status</span>',
-                remote: '<span style="color:red">Please enter a valid status</span>'
-            },
+            // status: {
+            //     required: '<span style="color:red" >Please enter Status</span>',
+            //     remote: '<span style="color:red">Please enter a valid status</span>'
+            // },
             photoitem: {
                 required: '<span style="color:red" >Please select Photo Item</span>',
                 remote: '<span style="color:red">Please select a valid Photo Item</span>'
@@ -1024,9 +1024,9 @@ $(function() {
                 required: true
 
             },
-            Status: {
-                required: true,
-            },
+            // Status: {
+            //     required: true,
+            // },
             PhotoItem: {
                 required: true,
             },
@@ -1058,9 +1058,9 @@ $(function() {
             LocationCode: {
                 required: '<span style="color:red">Please select Location Code</span>',
             },
-            Status: {
-                required: '<span style="color:red">Please enter Status</span>'
-            },
+            // Status: {
+            //     required: '<span style="color:red">Please enter Status</span>'
+            // },
             PhotoItem: {
                 required: '<span style="color:red">Please select Photo Item</span>'
             },
@@ -1097,9 +1097,9 @@ $(function() {
                 required: true
 
             },
-            Status: {
-                required: true,
-            },
+            // Status: {
+            //     required: true,
+            // },
             PhotoItem: {
                 required: true,
             },
@@ -1130,9 +1130,9 @@ $(function() {
             LocationCode: {
                 required: '<span style="color:red">Please select Location Code</span>',
             },
-            Status: {
-                required: '<span style="color:red">Please enter Status</span>'
-            },
+            // Status: {
+            //     required: '<span style="color:red">Please enter Status</span>'
+            // },
             PhotoItem: {
                 required: '<span style="color:red">Please select Photo Item</span>'
             },
@@ -1169,9 +1169,9 @@ $(function() {
                 required: true
 
             },
-            Status: {
-                required: true,
-            },
+            // Status: {
+            //     required: true,
+            // },
             PhotoItem: {
                 required: true,
             },
@@ -1198,9 +1198,9 @@ $(function() {
             LocationCode: {
                 required: '<span style="color:red">Please select Location Code</span>',
             },
-            Status: {
-                required: '<span style="color:red">Please enter Status</span>'
-            },
+            // Status: {
+            //     required: '<span style="color:red">Please enter Status</span>'
+            // },
             PhotoItem: {
                 required: '<span style="color:red">Please select Photo Item</span>'
             },
