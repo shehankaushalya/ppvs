@@ -14,7 +14,7 @@ class Model_progress extends CI_Model
             // 'PpdCode' => date('Y-m-d_H:i:s'),
             'ProjectCode' => $this->input->post('projectcode', true),
             'LocationCode' => $this->input->post('locationcode', true),
-            'Status' => $this->input->post('status', true),
+            // 'Status' => $this->input->post('status', true),
             'PhotoItem' => $this->input->post('photoitem', true),
             // 'Image' => $this->input->post('image', true),
             'Image' => $file_path,
@@ -107,10 +107,10 @@ class Model_progress extends CI_Model
         return $result;
     }
 
-    public function update_records($PpdCode, $ProjectCode, $LocationCode, $Status, $PhotoItem, $ImgDate)
+    public function update_records($PpdCode, $ProjectCode, $LocationCode, $PhotoItem, $ImgDate)
     {
         $this->db->query("update progressmaster set ProjectCode = '$ProjectCode', LocationCode='$LocationCode', 
-        Status ='$Status', PhotoItem ='$PhotoItem', ImgDate='$ImgDate' where PpdCode='$PpdCode' ");
+         PhotoItem ='$PhotoItem', ImgDate='$ImgDate' where PpdCode='$PpdCode' ");
     }
     public function deletedata($PpdCode)
     {
@@ -179,8 +179,11 @@ class Model_progress extends CI_Model
     function project_location_fetch_data($item_code, $project_code)
     {
         
-        $query = $this->db->query("SELECT * FROM progressmaster LEFT JOIN userproject ON progressmaster.ProjectCode=userproject.ProjectCode where userproject.status='checked' && progressmaster.ProjectCode='$project_code' && progressmaster.PhotoItem='$item_code'");
+        $query = $this->db->query("SELECT * FROM progressmaster LEFT JOIN userproject ON progressmaster.ProjectCode=userproject.ProjectCode where userproject.status='checked' && progressmaster.ProjectCode='$project_code' && progressmaster.PhotoItem='$item_code' GROUP BY progressmaster.LocationCode");
         return $query;
+
+        // $query = $this->db->query("SELECT * FROM progressmaster LEFT JOIN userproject ON progressmaster.ProjectCode=userproject.ProjectCode where userproject.status='checked' && progressmaster.ProjectCode='$project_code' && progressmaster.PhotoItem='$item_code' && progressmaster.ImgDate IN (SELECT MAX(progressmaster.ImgDate) FROM progressmaster) GROUP BY progressmaster.LocationCode");
+        // return $query;
 
         // $query = $this->db->query("SELECT DISTINCT progressmaster.ProjectCode, progressmaster.LocationCode, progressmaster.Status, userproject.UserName FROM progressmaster LEFT JOIN userproject ON progressmaster.ProjectCode=userproject.ProjectCode where userproject.status='checked' && progressmaster.ProjectCode='$project_code' && progressmaster.PhotoItem='$item_code'");
         // return $query;
