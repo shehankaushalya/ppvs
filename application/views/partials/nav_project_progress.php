@@ -668,7 +668,7 @@ $(function() {
                                  <table id="table" class="table table-striped table-bordered" style="width:100%">
                                      <thead>
                                          <tr>
-                                             <td colspan="7">
+                                             <td colspan="6">
                                                  <h4 id="topic" style="color:#337ab7;">Project Progress Details</h4>
                                              </td>
                                          </tr>
@@ -695,7 +695,7 @@ $(function() {
                                              <td><?php echo $row->PpdCode ?></td>
                                              <td><?php echo $row->ProjectCode ?></td>
                                              <td><?php echo $row->LocationCode  ?></td>
-                                             <!-- <td><?php echo $row->Status  ?></td> -->
+                                             
                                              <td><?php echo $row->PhotoItem  ?></td>
                                              
                                              
