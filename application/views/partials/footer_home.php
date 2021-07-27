@@ -1253,6 +1253,9 @@ $(function() {
             projectcode: {
                 select: true,
             },
+            status: {
+                required: true,
+            },
         },
 
         messages: {
@@ -1262,7 +1265,11 @@ $(function() {
             locationcode: {
                 required: '<span style="color:red">Please enter location code</span>',
                 remote: '<span style="color:red">Location code already exits</span>'
-            }
+            },
+            status: {
+                required: '<span style="color:red" >Please enter Status</span>',
+                remote: '<span style="color:red">Please enter a valid status</span>'
+            },
         },
 
         errorPlacement: function(error, element) {
@@ -1282,7 +1289,10 @@ $(function() {
             ProjectCode: {
                 select: true,
                 required: true
-            }
+            },
+            Status: {
+                required: true,
+            },
 
         },
 
@@ -1295,7 +1305,10 @@ $(function() {
             },
             ProjectCode: {
                 required: '<span style="color:red">Please select Project Code</span>'
-            }
+            },
+            Status: {
+                required: '<span style="color:red">Please enter Status</span>'
+            },
 
         },
 
@@ -1316,7 +1329,10 @@ $(function() {
             ProjectCode: {
                 select: true,
                 required: true
-            }
+            },
+            Status: {
+                required: true,
+            },
 
         },
 
@@ -1329,7 +1345,10 @@ $(function() {
             },
             ProjectCode: {
                 required: '<span style="color:red">Please select Project Code</span>'
-            }
+            },
+            Status: {
+                required: '<span style="color:red">Please enter Status</span>'
+            },
         },
 
         errorPlacement: function(error, element) {
@@ -1349,7 +1368,10 @@ $(function() {
             ProjectCode: {
                 select: true,
                 required: true
-            }
+            },
+            Status: {
+                required: true,
+            },
 
         },
 
@@ -1362,7 +1384,10 @@ $(function() {
             },
             ProjectCode: {
                 required: '<span style="color:red">Please select Project Code</span>'
-            }
+            },
+            Status: {
+                required: '<span style="color:red">Please enter Status</span>'
+            },
         },
 
         errorPlacement: function(error, element) {
