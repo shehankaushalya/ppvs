@@ -81,7 +81,7 @@
 
             <div class="sparkline13-hd">
                 <div class="main-sparkline13-hd">
-                    <br><br>
+                    <br><br><br><br>
 
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <h3 style="color:#337ab7;text-align: center;">Projects</h3>
