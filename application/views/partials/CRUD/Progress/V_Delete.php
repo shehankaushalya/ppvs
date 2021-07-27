@@ -44,7 +44,7 @@
 
 
 
-                    <div class="form-group-inner">
+                    <!-- <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                 <label class="login2">Status</label>
@@ -54,7 +54,7 @@
                                     id="V_D_Status" readonly />
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <div class="form-group-inner">
