@@ -271,7 +271,7 @@ $(function() {
 
 
 
-                                                                             <div class="form-group-inner">
+                                                                             <!-- <div class="form-group-inner">
                                                                                  <div class="row">
                                                                                      <div
                                                                                          class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -297,7 +297,7 @@ $(function() {
                                                                                          
                                                                                      </div>
                                                                                  </div>
-                                                                             </div>
+                                                                             </div> -->
 
 
                                                                              <div class="form-group-inner">
@@ -677,7 +677,7 @@ $(function() {
                                              <th data-field="PpdCode">PPD Code</th>
                                              <th data-field="ProjectCode">Project Code</th>
                                              <th data-field="LocationCode">Location Code</th>
-                                             <th data-field="Status">Status</th>
+                                             <!-- <th data-field="Status">Status</th> -->
                                              <th data-field="PhotoItem">Photo Category</th>
                                              <th data-field="Image">Image</th>
                                              <th data-field="ImgDate">Photo Capturing Date</th>
@@ -695,7 +695,7 @@ $(function() {
                                              <td><?php echo $row->PpdCode ?></td>
                                              <td><?php echo $row->ProjectCode ?></td>
                                              <td><?php echo $row->LocationCode  ?></td>
-                                             <td><?php echo $row->Status  ?></td>
+                                             <!-- <td><?php echo $row->Status  ?></td> -->
                                              <td><?php echo $row->PhotoItem  ?></td>
                                              
                                              
@@ -718,7 +718,7 @@ $(function() {
                                             } else {
                                                 ?>
                                          <tr>
-                                             <td colspan="7"> No Data Found </td>
+                                             <td colspan="6"> No Data Found </td>
                                          </tr>
                                          <?php
                                             }
@@ -765,74 +765,74 @@ for (var i = 2; i < table.rows.length; i++) {
         document.getElementById("V_V_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("V_V_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("V_V_LocationCode").value = this.cells[2].innerHTML;
-        document.getElementById("V_V_Status").value = this.cells[3].innerHTML;
-        document.getElementById("V_V_PhotoItem").value = this.cells[4].innerHTML;
-        document.getElementById("V_V_Image").value = this.cells[5].innerHTML;
-        document.getElementById("V_V_ImgDate").value = this.cells[6].innerHTML;
+        // document.getElementById("V_V_Status").value = this.cells[3].innerHTML;
+        document.getElementById("V_V_PhotoItem").value = this.cells[3].innerHTML;
+        document.getElementById("V_V_Image").value = this.cells[4].innerHTML;
+        document.getElementById("V_V_ImgDate").value = this.cells[5].innerHTML;
 
         document.getElementById("V_E_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("V_E_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("V_E_LocationCode").value = this.cells[2].innerHTML;
-        document.getElementById("V_E_Status").value = this.cells[3].innerHTML;
-        document.getElementById("V_E_PhotoItem").value = this.cells[4].innerHTML;
-        document.getElementById("V_E_Image").value = this.cells[5].innerHTML;
-        document.getElementById("V_E_ImgDate").value = this.cells[6].innerHTML;
+        // document.getElementById("V_E_Status").value = this.cells[3].innerHTML;
+        document.getElementById("V_E_PhotoItem").value = this.cells[3].innerHTML;
+        document.getElementById("V_E_Image").value = this.cells[4].innerHTML;
+        document.getElementById("V_E_ImgDate").value = this.cells[5].innerHTML;
 
         document.getElementById("V_D_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("V_D_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("V_D_LocationCode").value = this.cells[2].innerHTML;
-        document.getElementById("V_D_Status").value = this.cells[3].innerHTML;
-        document.getElementById("V_D_PhotoItem").value = this.cells[4].innerHTML;
-        document.getElementById("V_D_Image").value = this.cells[5].innerHTML;
-        document.getElementById("V_D_ImgDate").value = this.cells[6].innerHTML;
+        // document.getElementById("V_D_Status").value = this.cells[3].innerHTML;
+        document.getElementById("V_D_PhotoItem").value = this.cells[3].innerHTML;
+        document.getElementById("V_D_Image").value = this.cells[4].innerHTML;
+        document.getElementById("V_D_ImgDate").value = this.cells[5].innerHTML;
 
         document.getElementById("E_V_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("E_V_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("E_V_LocationCode").value = this.cells[2].innerHTML;
-        document.getElementById("E_V_Status").value = this.cells[3].innerHTML;
-        document.getElementById("E_V_PhotoItem").value = this.cells[4].innerHTML;
-        document.getElementById("E_V_Image").value = this.cells[5].innerHTML;
-        document.getElementById("E_V_ImgDate").value = this.cells[6].innerHTML;
+        // document.getElementById("E_V_Status").value = this.cells[3].innerHTML;
+        document.getElementById("E_V_PhotoItem").value = this.cells[3].innerHTML;
+        document.getElementById("E_V_Image").value = this.cells[4].innerHTML;
+        document.getElementById("E_V_ImgDate").value = this.cells[5].innerHTML;
 
         document.getElementById("E_E_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("E_E_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("E_E_LocationCode").value = this.cells[2].innerHTML;
-        document.getElementById("E_E_Status").value = this.cells[3].innerHTML;
-        document.getElementById("E_E_PhotoItem").value = this.cells[4].innerHTML;
-        document.getElementById("E_E_Image").value = this.cells[5].innerHTML;
-        document.getElementById("E_E_ImgDate").value = this.cells[6].innerHTML;
+        // document.getElementById("E_E_Status").value = this.cells[3].innerHTML;
+        document.getElementById("E_E_PhotoItem").value = this.cells[3].innerHTML;
+        document.getElementById("E_E_Image").value = this.cells[4].innerHTML;
+        document.getElementById("E_E_ImgDate").value = this.cells[5].innerHTML;
 
         document.getElementById("E_D_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("E_D_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("E_D_LocationCode").value = this.cells[2].innerHTML;
-        document.getElementById("E_D_Status").value = this.cells[3].innerHTML;
-        document.getElementById("E_D_PhotoItem").value = this.cells[4].innerHTML;
-        document.getElementById("E_D_Image").value = this.cells[5].innerHTML;
-        document.getElementById("E_D_ImgDate").value = this.cells[6].innerHTML;
+        // document.getElementById("E_D_Status").value = this.cells[3].innerHTML;
+        document.getElementById("E_D_PhotoItem").value = this.cells[3].innerHTML;
+        document.getElementById("E_D_Image").value = this.cells[4].innerHTML;
+        document.getElementById("E_D_ImgDate").value = this.cells[5].innerHTML;
 
         document.getElementById("D_V_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("D_V_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("D_V_LocationCode").value = this.cells[2].innerHTML;
-        document.getElementById("D_V_Status").value = this.cells[3].innerHTML;
-        document.getElementById("D_V_PhotoItem").value = this.cells[4].innerHTML;
-        document.getElementById("D_V_Image").value = this.cells[5].innerHTML;
-        document.getElementById("D_V_ImgDate").value = this.cells[6].innerHTML;
+        // document.getElementById("D_V_Status").value = this.cells[3].innerHTML;
+        document.getElementById("D_V_PhotoItem").value = this.cells[3].innerHTML;
+        document.getElementById("D_V_Image").value = this.cells[4].innerHTML;
+        document.getElementById("D_V_ImgDate").value = this.cells[5].innerHTML;
 
         document.getElementById("D_E_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("D_E_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("D_E_LocationCode").value = this.cells[2].innerHTML;
-        document.getElementById("D_E_Status").value = this.cells[3].innerHTML;
-        document.getElementById("D_E_PhotoItem").value = this.cells[4].innerHTML;
-        document.getElementById("D_E_Image").value = this.cells[5].innerHTML;
-        document.getElementById("D_E_ImgDate").value = this.cells[6].innerHTML;
+        // document.getElementById("D_E_Status").value = this.cells[3].innerHTML;
+        document.getElementById("D_E_PhotoItem").value = this.cells[3].innerHTML;
+        document.getElementById("D_E_Image").value = this.cells[4].innerHTML;
+        document.getElementById("D_E_ImgDate").value = this.cells[5].innerHTML;
 
         document.getElementById("D_D_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("D_D_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("D_D_LocationCode").value = this.cells[2].innerHTML;
-        document.getElementById("D_D_Status").value = this.cells[3].innerHTML;
-        document.getElementById("D_D_PhotoItem").value = this.cells[4].innerHTML;
-        document.getElementById("D_D_Image").value = this.cells[5].innerHTML;
-        document.getElementById("D_D_ImgDate").value = this.cells[6].innerHTML;
+        // document.getElementById("D_D_Status").value = this.cells[3].innerHTML;
+        document.getElementById("D_D_PhotoItem").value = this.cells[3].innerHTML;
+        document.getElementById("D_D_Image").value = this.cells[4].innerHTML;
+        document.getElementById("D_D_ImgDate").value = this.cells[5].innerHTML;
 
 
 
