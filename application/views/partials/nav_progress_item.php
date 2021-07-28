@@ -131,7 +131,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Retaining_Wall/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/4.png"></center>
-                                <br><h4><center><b>Retaining_Wall</b></center></h4></a>    
+                                <br><h4><center><b>Retaining Wall</b></center></h4></a>    
                     </div>
                     
 
