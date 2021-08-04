@@ -123,7 +123,30 @@
         <div class="main-sparkline13-hd">
 
 
+                <div class="row">
 
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <h3 style="color:#337ab7;"><center>Project</center></h3>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <h3 style="color:#337ab7;"><center>Location</center></h3>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="font-size: 18px"><center><?php echo($project_code); ?></center></div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="font-size: 18px"><center><?php echo($location_code); ?></center></div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+                               
+                </div>
+
+        <br>      
         <div class="row">
             
 
@@ -135,7 +158,7 @@
 
                                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumb">
 
-                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $row->ProjectCode ?> <?php echo $row->LocationCode ?> <?php echo $row->ImgDate ?>"
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $row->ImgDate ?>"
                                     data-image="<?php echo $row->Image ?>"
                                     data-target="#image-gallery">
 
@@ -143,7 +166,8 @@
                                     src="<?php echo $row->Image ?>"
                                     alt="Another alt text">
 
-                                    <h5><center><b><?php echo $row->ProjectCode ?> <?php echo $row->LocationCode ?> <?php echo $row->ImgDate ?></b></center></h5></a>
+                                    <!-- <h5><center><b><?php echo $row->ProjectCode ?> <?php echo $row->LocationCode ?> <?php echo $row->ImgDate ?></b></center></h5></a> -->
+                                    <h5><center><b><?php echo $row->ImgDate ?></b></center></h5></a>
                                     </a>
             
                                     </div>
