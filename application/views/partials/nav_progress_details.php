@@ -118,12 +118,10 @@
 
         <div class="sparkline13-list">
 
-    
-<br><br><br><br>
         <div class="main-sparkline13-hd">
 
 
-                <div class="row">
+                <div class="row" style="margin-top: 60px">
 
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                     </div>
