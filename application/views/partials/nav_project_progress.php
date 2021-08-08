@@ -325,6 +325,30 @@ $(function() {
                                                                                  </div>
                                                                              </div>
 
+                                                                             <div class="form-group-inner">
+                                                                                 <div class="row">
+                                                                                     <div
+                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                         <label class="login2">Working Side</label>
+                                                                                     </div>
+                                                                                     <div
+                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                         <select class="form-control"
+                                                                                             id="workside1" name="workside" >
+                                                                                             
+                                                                                             <option>
+                                                                                             </option>
+                                                                                             <option>LHS
+                                                                                             </option>
+                                                                                             <option>RHS
+                                                                                             </option>
+                                                                                             
+
+                                                                                         </select>
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+
 
                                                                              <div class="form-group-inner">
                                                                                  <div class="row">
@@ -368,6 +392,28 @@ $(function() {
                                                                                              name="imgdate"
                                                                                              id="imgdate1" 
                                                                                              required /> -->
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+
+
+                                                                             <div class="form-group-inner">
+                                                                                 <div class="row">
+                                                                                     <div
+                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                         <label
+                                                                                             class="login2">Remark</label>
+                                                                                     </div>
+                                                                                     <div
+                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                                                         <!-- <input type="date" class="form-control" id="imgdate1"
+                                                                                            name="imgdate" required /> -->
+                                                                                         <input type="text"
+                                                                                             class="form-control"
+                                                                                             placeholder="Enter Remark"
+                                                                                             name="remark"
+                                                                                             id="remark1" 
+                                                                                             required />
                                                                                      </div>
                                                                                  </div>
                                                                              </div>
@@ -668,7 +714,7 @@ $(function() {
                                  <table id="table" class="table table-striped table-bordered" style="width:100%">
                                      <thead>
                                          <tr>
-                                             <td colspan="6">
+                                             <td colspan="8">
                                                  <h4 id="topic" style="color:#337ab7;">Project Progress Details</h4>
                                              </td>
                                          </tr>
@@ -679,8 +725,11 @@ $(function() {
                                              <th data-field="LocationCode">Location Code</th>
                                              <!-- <th data-field="Status">Status</th> -->
                                              <th data-field="PhotoItem">Photo Category</th>
+                                             <th data-field="WorkSide">Working Side</th>
                                              <th data-field="Image">Image</th>
                                              <th data-field="ImgDate">Photo Capturing Date</th>
+                                             <th data-field="Remark">Remark</th>
+
 
                                          </tr>
                                      </thead>
@@ -697,6 +746,8 @@ $(function() {
                                              <td><?php echo $row->LocationCode  ?></td>
                                              
                                              <td><?php echo $row->PhotoItem  ?></td>
+
+                                             <td><?php echo $row->WorkSide  ?></td>
                                              
                                              
                                              <td>
@@ -708,6 +759,8 @@ $(function() {
                                              </td>
                                              <td><?php echo $row->ImgDate  ?></td>
 
+                                             <td><?php echo $row->Remark  ?></td>
+
 
                                          </tr>
 
@@ -718,7 +771,7 @@ $(function() {
                                             } else {
                                                 ?>
                                          <tr>
-                                             <td colspan="6"> No Data Found </td>
+                                             <td colspan="8"> No Data Found </td>
                                          </tr>
                                          <?php
                                             }
@@ -767,72 +820,90 @@ for (var i = 2; i < table.rows.length; i++) {
         document.getElementById("V_V_LocationCode").value = this.cells[2].innerHTML;
         // document.getElementById("V_V_Status").value = this.cells[3].innerHTML;
         document.getElementById("V_V_PhotoItem").value = this.cells[3].innerHTML;
-        document.getElementById("V_V_Image").value = this.cells[4].innerHTML;
-        document.getElementById("V_V_ImgDate").value = this.cells[5].innerHTML;
+        document.getElementById("V_V_WorkSide").value = this.cells[4].innerHTML;
+        document.getElementById("V_V_Image").value = this.cells[5].innerHTML;
+        document.getElementById("V_V_ImgDate").value = this.cells[6].innerHTML;
+        document.getElementById("V_V_Remark").value = this.cells[7].innerHTML;
 
         document.getElementById("V_E_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("V_E_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("V_E_LocationCode").value = this.cells[2].innerHTML;
         // document.getElementById("V_E_Status").value = this.cells[3].innerHTML;
         document.getElementById("V_E_PhotoItem").value = this.cells[3].innerHTML;
-        document.getElementById("V_E_Image").value = this.cells[4].innerHTML;
-        document.getElementById("V_E_ImgDate").value = this.cells[5].innerHTML;
+        document.getElementById("V_E_WorkSide").value = this.cells[4].innerHTML;
+        document.getElementById("V_E_Image").value = this.cells[5].innerHTML;
+        document.getElementById("V_E_ImgDate").value = this.cells[6].innerHTML;
+        document.getElementById("V_E_Remark").value = this.cells[7].innerHTML;
 
         document.getElementById("V_D_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("V_D_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("V_D_LocationCode").value = this.cells[2].innerHTML;
         // document.getElementById("V_D_Status").value = this.cells[3].innerHTML;
         document.getElementById("V_D_PhotoItem").value = this.cells[3].innerHTML;
-        document.getElementById("V_D_Image").value = this.cells[4].innerHTML;
-        document.getElementById("V_D_ImgDate").value = this.cells[5].innerHTML;
+        document.getElementById("V_D_WorkSide").value = this.cells[4].innerHTML;
+        document.getElementById("V_D_Image").value = this.cells[5].innerHTML;
+        document.getElementById("V_D_ImgDate").value = this.cells[6].innerHTML;
+        document.getElementById("V_D_Remark").value = this.cells[7].innerHTML;
 
         document.getElementById("E_V_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("E_V_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("E_V_LocationCode").value = this.cells[2].innerHTML;
         // document.getElementById("E_V_Status").value = this.cells[3].innerHTML;
         document.getElementById("E_V_PhotoItem").value = this.cells[3].innerHTML;
-        document.getElementById("E_V_Image").value = this.cells[4].innerHTML;
-        document.getElementById("E_V_ImgDate").value = this.cells[5].innerHTML;
+        document.getElementById("E_V_WorkSide").value = this.cells[4].innerHTML;
+        document.getElementById("E_V_Image").value = this.cells[5].innerHTML;
+        document.getElementById("E_V_ImgDate").value = this.cells[6].innerHTML;
+        document.getElementById("E_V_Remark").value = this.cells[7].innerHTML;
 
         document.getElementById("E_E_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("E_E_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("E_E_LocationCode").value = this.cells[2].innerHTML;
         // document.getElementById("E_E_Status").value = this.cells[3].innerHTML;
         document.getElementById("E_E_PhotoItem").value = this.cells[3].innerHTML;
-        document.getElementById("E_E_Image").value = this.cells[4].innerHTML;
-        document.getElementById("E_E_ImgDate").value = this.cells[5].innerHTML;
+        document.getElementById("E_E_WorkSide").value = this.cells[4].innerHTML;
+        document.getElementById("E_E_Image").value = this.cells[5].innerHTML;
+        document.getElementById("E_E_ImgDate").value = this.cells[6].innerHTML;
+        document.getElementById("E_E_Remark").value = this.cells[7].innerHTML;
 
         document.getElementById("E_D_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("E_D_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("E_D_LocationCode").value = this.cells[2].innerHTML;
         // document.getElementById("E_D_Status").value = this.cells[3].innerHTML;
         document.getElementById("E_D_PhotoItem").value = this.cells[3].innerHTML;
-        document.getElementById("E_D_Image").value = this.cells[4].innerHTML;
-        document.getElementById("E_D_ImgDate").value = this.cells[5].innerHTML;
+        document.getElementById("E_D_WorkSide").value = this.cells[4].innerHTML;
+        document.getElementById("E_D_Image").value = this.cells[5].innerHTML;
+        document.getElementById("E_D_ImgDate").value = this.cells[6].innerHTML;
+        document.getElementById("E_D_Remark").value = this.cells[7].innerHTML;
 
         document.getElementById("D_V_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("D_V_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("D_V_LocationCode").value = this.cells[2].innerHTML;
         // document.getElementById("D_V_Status").value = this.cells[3].innerHTML;
         document.getElementById("D_V_PhotoItem").value = this.cells[3].innerHTML;
-        document.getElementById("D_V_Image").value = this.cells[4].innerHTML;
-        document.getElementById("D_V_ImgDate").value = this.cells[5].innerHTML;
+        document.getElementById("D_V_WorkSide").value = this.cells[4].innerHTML;
+        document.getElementById("D_V_Image").value = this.cells[5].innerHTML;
+        document.getElementById("D_V_ImgDate").value = this.cells[6].innerHTML;
+        document.getElementById("D_V_Remark").value = this.cells[7].innerHTML;
 
         document.getElementById("D_E_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("D_E_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("D_E_LocationCode").value = this.cells[2].innerHTML;
         // document.getElementById("D_E_Status").value = this.cells[3].innerHTML;
         document.getElementById("D_E_PhotoItem").value = this.cells[3].innerHTML;
-        document.getElementById("D_E_Image").value = this.cells[4].innerHTML;
-        document.getElementById("D_E_ImgDate").value = this.cells[5].innerHTML;
+        document.getElementById("D_E_WorkSide").value = this.cells[4].innerHTML;
+        document.getElementById("D_E_Image").value = this.cells[5].innerHTML;
+        document.getElementById("D_E_ImgDate").value = this.cells[6].innerHTML;
+        document.getElementById("D_E_Remark").value = this.cells[7].innerHTML;
 
         document.getElementById("D_D_PpdCode").value = this.cells[0].innerHTML;
         document.getElementById("D_D_ProjectCode").value = this.cells[1].innerHTML;
         document.getElementById("D_D_LocationCode").value = this.cells[2].innerHTML;
         // document.getElementById("D_D_Status").value = this.cells[3].innerHTML;
         document.getElementById("D_D_PhotoItem").value = this.cells[3].innerHTML;
-        document.getElementById("D_D_Image").value = this.cells[4].innerHTML;
-        document.getElementById("D_D_ImgDate").value = this.cells[5].innerHTML;
+        document.getElementById("D_D_WorkSide").value = this.cells[4].innerHTML;
+        document.getElementById("D_D_Image").value = this.cells[5].innerHTML;
+        document.getElementById("D_D_ImgDate").value = this.cells[6].innerHTML;
+        document.getElementById("D_D_Remark").value = this.cells[7].innerHTML;
 
 
 
