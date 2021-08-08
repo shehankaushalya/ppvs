@@ -213,7 +213,7 @@
 
 
                                     </select>
-                                    <input class="form-control" name="PhotoItem" id="D_E_WorkSide" 
+                                    <input class="form-control" name="WorkSide" id="D_E_WorkSide" 
                                     style="position:absolute;top:0px;width:240px;width:180px\9;#width:180px; border:1px solid #ddd; border-right:0;" 
                                     onfocus="this.select()" type="text" readonly required>
 
