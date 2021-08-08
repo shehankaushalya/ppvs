@@ -202,11 +202,12 @@
                                     onchange="document.getElementById('V_E_WorkSide').value=this.options[this.selectedIndex].text; 
                                     document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
                                         <option value="-1"></option>
-                                        <option>
-                                                                                             </option>
+                                        
                                                                                              <option>LHS
                                                                                              </option>
                                                                                              <option>RHS
+                                                                                             </option>
+                                                                                             <option>None
                                                                                              </option>
 
 
