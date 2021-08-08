@@ -75,9 +75,11 @@ class Progress extends CI_Controller
         $this->form_validation->set_rules('locationcode', 'locationcode', 'required');
         // $this->form_validation->set_rules('status', 'status', 'required');
         $this->form_validation->set_rules('photoitem', 'photoitem', 'required');
+        $this->form_validation->set_rules('workside', 'workside', 'required');
         $this->form_validation->set_rules('image', 'image');
         $this->form_validation->set_rules('imgdate', 'imgdate', 'required');
         // $this->form_validation->set_rules('imgdate', 'imgdate', 'required|is_unique[progressmaster.ImgDate]');
+        $this->form_validation->set_rules('remark', 'remark', 'required');
 
 
         if ($this->form_validation->run() == false) {
@@ -172,11 +174,13 @@ class Progress extends CI_Controller
         $LocationCode = $this->input->post('LocationCode');
         // $Status = $this->input->post('Status');
         $PhotoItem = $this->input->post('PhotoItem');
+        $WorkSide = $this->input->post('WorkSide');
         // $Image = $this->input->post('Image');
         $ImgDate = $this->input->post('ImgDate');
+        $Remark = $this->input->post('Remark');
         $this->load->model("Model_progress");
         // $this->Model_progress->update_records($PpdCode, $ProjectCode, $LocationCode, $Status, $PhotoItem, $Image, $ImgDate);
-        $this->Model_progress->update_records($PpdCode, $ProjectCode, $LocationCode, $PhotoItem, $ImgDate);
+        $this->Model_progress->update_records($PpdCode, $ProjectCode, $LocationCode, $PhotoItem, $WorkSide, $ImgDate, $Remark);
         
         $this->session->set_flashdata('msg', 'Data updated successfully.');
         redirect('Progress/progresses');
