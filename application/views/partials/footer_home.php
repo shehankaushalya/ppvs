@@ -964,10 +964,16 @@ $(function() {
             photoitem: {
                 required: true,
             },
+            workside: {
+                required: true,
+            },
             image: {
                 required: true,
             },
             imgdate: {
+                required: true,
+            },
+            remark: {
                 required: true,
             }
 
@@ -988,6 +994,10 @@ $(function() {
                 required: '<span style="color:red" >Please select Photo Item</span>',
                 remote: '<span style="color:red">Please select a valid Photo Item</span>'
             },
+            workside: {
+                required: '<span style="color:red" >Please select Working Side</span>',
+                remote: '<span style="color:red">Please select a valid Working Side</span>'
+            },
             image: {
                 required: '<span style="color:red" >Please upload an Image</span>',
                 remote: '<span style="color:red">Please upload an Image</span>'
@@ -995,6 +1005,10 @@ $(function() {
             imgdate: {
                 required: '<span style="color:red" >Please select Image Date</span>',
                 remote: '<span style="color:red">Please select a valid Image Date</span>'
+            },
+            remark: {
+                required: '<span style="color:red" >Please enter Remark</span>',
+                remote: '<span style="color:red">Please enter a valid Remark</span>'
             }
 
 
@@ -1030,13 +1044,19 @@ $(function() {
             PhotoItem: {
                 required: true,
             },
+            WorkSide: {
+                required: true,
+            },
             Image: {
                 required: true,
             },
             ImgDate: {
                 required: true,
 
-            }
+            },
+            Remark: {
+                required: true,
+            },
 
 
 
@@ -1064,12 +1084,18 @@ $(function() {
             PhotoItem: {
                 required: '<span style="color:red">Please select Photo Item</span>'
             },
+            WorkSide: {
+                required: '<span style="color:red">Please select Working Side</span>'
+            },
             Image: {
                 required: '<span style="color:red">Please upload an Image</span>'
             },
             ImgDate: {
                 required: '<span style="color:red">Please select Image Date</span>'
-            }
+            },
+            Remark: {
+                required: '<span style="color:red">Please enter Remark</span>'
+            },
 
         },
 
@@ -1103,13 +1129,19 @@ $(function() {
             PhotoItem: {
                 required: true,
             },
+            WorkSide: {
+                required: true,
+            },
             Image: {
                 required: true,
             },
             ImgDate: {
                 required: true,
 
-            }
+            },
+            Remark: {
+                required: true,
+            },
 
 
 
@@ -1136,12 +1168,18 @@ $(function() {
             PhotoItem: {
                 required: '<span style="color:red">Please select Photo Item</span>'
             },
+            WorkSide: {
+                required: '<span style="color:red">Please select Working Side</span>'
+            },
             Image: {
                 required: '<span style="color:red">Please upload an Image</span>'
             },
             ImgDate: {
                 required: '<span style="color:red">Please select Image Date</span>'
-            }
+            },
+            Remark: {
+                required: '<span style="color:red">Please enter Remark</span>'
+            },
 
         },
 
@@ -1175,13 +1213,19 @@ $(function() {
             PhotoItem: {
                 required: true,
             },
+            WorkSide: {
+                required: true,
+            },
             Image: {
                 required: true,
             },
             ImgDate: {
                 required: true,
 
-            }
+            },
+            Remark: {
+                required: true,
+            },
 
         },
 
@@ -1204,12 +1248,18 @@ $(function() {
             PhotoItem: {
                 required: '<span style="color:red">Please select Photo Item</span>'
             },
+            WorkSide: {
+                required: '<span style="color:red">Please select Working Side</span>'
+            },
             Image: {
                 required: '<span style="color:red">Please upload an Image</span>'
             },
             ImgDate: {
                 required: '<span style="color:red">Please select Image Date</span>'
-            }
+            },
+            Remark: {
+                required: '<span style="color:red">Please enter Remark</span>'
+            },
 
         },
 
