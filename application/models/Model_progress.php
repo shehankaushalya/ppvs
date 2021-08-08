@@ -16,10 +16,12 @@ class Model_progress extends CI_Model
             'LocationCode' => $this->input->post('locationcode', true),
             // 'Status' => $this->input->post('status', true),
             'PhotoItem' => $this->input->post('photoitem', true),
+            'WorkSide' => $this->input->post('workside', true),
             // 'Image' => $this->input->post('image', true),
             'Image' => $file_path,
             'ImgDate' => $this->input->post('imgdate', true),
             'PpdCode' => $this->input->post('projectcode') . "_" . date('Y-m-d_H:i:s'),
+            'Remark' => $this->input->post('remark', true),
 
         );
 
@@ -107,10 +109,10 @@ class Model_progress extends CI_Model
         return $result;
     }
 
-    public function update_records($PpdCode, $ProjectCode, $LocationCode, $PhotoItem, $ImgDate)
+    public function update_records($PpdCode, $ProjectCode, $LocationCode, $PhotoItem, $WorkSide, $ImgDate, $Remark)
     {
         $this->db->query("update progressmaster set ProjectCode = '$ProjectCode', LocationCode='$LocationCode', 
-         PhotoItem ='$PhotoItem', ImgDate='$ImgDate' where PpdCode='$PpdCode' ");
+         PhotoItem ='$PhotoItem', WorkSide ='$WorkSide', ImgDate='$ImgDate', Remark='$Remark' where PpdCode='$PpdCode' ");
     }
     public function deletedata($PpdCode)
     {
