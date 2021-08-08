@@ -336,11 +336,12 @@ $(function() {
                                                                                          <select class="form-control"
                                                                                              id="workside1" name="workside" >
                                                                                              
-                                                                                             <option>
-                                                                                             </option>
+                                                                                             
                                                                                              <option>LHS
                                                                                              </option>
                                                                                              <option>RHS
+                                                                                             </option>
+                                                                                             <option>None
                                                                                              </option>
                                                                                              
 
