@@ -26,6 +26,45 @@
         /* width: 214px; */
         background-color: #fff0;
     }
+
+    @media(min-width:1199px) {
+    #logo {
+        visibility: hidden;
+    }
+    }
+
+
+    @media(max-width:991px) {
+        #logo {
+        visibility: visible;
+    }
+    }
+
+    @media(max-width:767px) {
+        #logo {
+        visibility: visible;
+    }
+    }
+
+    @media(max-width:480px) {
+        #logo {
+        visibility: visible;
+    }
+    }
+
+    @media(max-width:360px) {
+        #logo {
+        visibility: visible;
+    }
+    }
+
+    @media(max-width:320px) {
+        #logo {
+        visibility: visible;
+    }
+    }
+
+
 </style>
 
 <div class="data-table-area mg-b-15">
@@ -136,8 +175,17 @@
 
 <div class="footer-copyright-area" style="background-color:#fff">
 
-                <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12"></div>
-                <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+                <!-- <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12"></div> -->
+                <div class="col-lg-2 col-md-2"></div>
+                <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2" id="logo">
+                    <center>
+                        <img class="main-logo" src="<?php echo base_url(); ?>assets/new/img/logo/logo.jpg" alt="logo.png" style="height:100px" />
+                       
+                    </center>
+                <br>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-7 col-xs-7"></div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                     <center>
                         <img class="main-logo" src="<?php echo base_url(); ?>assets/new/img/logo/logo.png" alt="logo.png" style="height:100px" />
                         <h5>NEM Construction (Pvt) Ltd <br>
