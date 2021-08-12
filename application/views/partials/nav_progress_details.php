@@ -264,7 +264,7 @@
 
                                     <br>
 
-                                    <h5><center><b><?php echo $row->ProjectCode ?> <?php echo $row->LocationCode ?> <?php echo $row->ImgDate ?></b></center></h5></a>
+                                    <h5><center><b><b><?php echo $row->Remark ?> <?php echo $row->ImgDate ?></b></b></center></h5></a>
                                     </a>
             
                                     </div>
