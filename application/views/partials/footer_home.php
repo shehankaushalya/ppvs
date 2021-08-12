@@ -1306,6 +1306,10 @@ $(function() {
             status: {
                 required: true,
             },
+            description: {
+                required: true,
+                noSpace: true,
+            },
         },
 
         messages: {
@@ -1319,6 +1323,10 @@ $(function() {
             status: {
                 required: '<span style="color:red" >Please enter Status</span>',
                 remote: '<span style="color:red">Please enter a valid status</span>'
+            },
+            description: {
+                required: '<span style="color:red" >Please enter Remark</span>',
+                remote: '<span style="color:red">Please enter a valid remark</span>'
             },
         },
 
@@ -1343,6 +1351,10 @@ $(function() {
             Status: {
                 required: true,
             },
+            Description: {
+                required: true,
+                noSpace: true,
+            },
 
         },
 
@@ -1358,6 +1370,9 @@ $(function() {
             },
             Status: {
                 required: '<span style="color:red">Please enter Status</span>'
+            },
+            Description: {
+                required: '<span style="color:red">Please enter Remark</span>'
             },
 
         },
@@ -1383,6 +1398,10 @@ $(function() {
             Status: {
                 required: true,
             },
+            Description: {
+                required: true,
+                noSpace: true,
+            },
 
         },
 
@@ -1398,6 +1417,9 @@ $(function() {
             },
             Status: {
                 required: '<span style="color:red">Please enter Status</span>'
+            },
+            Description: {
+                required: '<span style="color:red">Please enter Remark</span>'
             },
         },
 
@@ -1422,6 +1444,10 @@ $(function() {
             Status: {
                 required: true,
             },
+            Description: {
+                required: true,
+                noSpace: true,
+            },
 
         },
 
@@ -1437,6 +1463,9 @@ $(function() {
             },
             Status: {
                 required: '<span style="color:red">Please enter Status</span>'
+            },
+            Description: {
+                required: '<span style="color:red">Please enter Remark</span>'
             },
         },
 
