@@ -109,13 +109,13 @@
                     <div class="row">
 
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Bridge/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/1.png"></center>
-                                <br><h4><center><b>Bridge</b></center></h4></a>
+                        <a href="<?php echo base_url(); ?>index.php/Home/LocationView/BRIDGE/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/1.png"></center>
+                                <br><h4><center><b>BRIDGE</b></center></h4></a>
                                 <!-- <br><h5><center><b>Bridge --- <?php echo($product_id); ?></b></center></h5></a>    -->
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Culvert/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/2.png"></center>
-                                <br><h4><center><b>Culvert</b></center></h4></a>  
+                    <a href="<?php echo base_url(); ?>index.php/Home/LocationView/CULVERT/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/2.png"></center>
+                                <br><h4><center><b>CULVERT</b></center></h4></a>  
                     </div>
                     
 
@@ -126,12 +126,12 @@
                 <div class="row">
 
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Embankment/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/3.png"></center>
-                                <br><h4><center><b>Embankment</b></center></h4></a>  
+                    <a href="<?php echo base_url(); ?>index.php/Home/LocationView/EMBANKMENT/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/3.png"></center>
+                                <br><h4><center><b>EMBANKMENT</b></center></h4></a>  
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <a href="<?php echo base_url(); ?>index.php/Home/LocationView/Retaining_Wall/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/4.png"></center>
-                                <br><h4><center><b>Retaining Wall</b></center></h4></a>    
+                    <a href="<?php echo base_url(); ?>index.php/Home/LocationView/RETAINING_WALL/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/4.png"></center>
+                                <br><h4><center><b>RETAINING WALL</b></center></h4></a>    
                     </div>
                     
 
