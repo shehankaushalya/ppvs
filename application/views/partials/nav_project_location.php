@@ -238,7 +238,7 @@ $(function() {
                                                                                          <input type="text"
                                                                                              class="form-control"
                                                                                              placeholder="Enter Remark"
-                                                                                             name="description" />
+                                                                                             name="description" id="description1" required />
                                                                                      </div>
                                                                                  </div>
                                                                              </div>
