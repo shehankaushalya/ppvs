@@ -81,16 +81,20 @@ class Home extends CI_Controller
         $item_code = $this->uri->segment(3);
         $project_code = $this->uri->segment(4);
         $location_code = $this->uri->segment(5);
+        $remark = $this->uri->segment(6);
         
         
         $data['item_code'] = $item_code;
         $data['project_code'] = $project_code;
         $data['location_code'] = $location_code;
+        $data['remark'] = $remark;
 
 
         if ($this->session->userdata('username') != "") {
             $this->load->model("Model_progress");
-            $data["project_image_fetch_data"] = $this->Model_progress->project_image_fetch_data($item_code, $project_code, $location_code);
+            $data["project_image_fetch_data_none"] = $this->Model_progress->project_image_fetch_data_none($item_code, $project_code, $location_code);
+            $data["project_image_fetch_data_lhs"] = $this->Model_progress->project_image_fetch_data_lhs($item_code, $project_code, $location_code);
+            $data["project_image_fetch_data_rhs"] = $this->Model_progress->project_image_fetch_data_rhs($item_code, $project_code, $location_code);
             $this->load->view('ImageView', $data);
             // redirect('Progress/project_image_view');
         } else {
