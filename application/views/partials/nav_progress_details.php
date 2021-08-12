@@ -123,40 +123,50 @@
 
                 <div class="row" style="margin-top: 60px">
 
+                    
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <h3 style="color:#337ab7;"><center>Project</center></h3>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <h3 style="color:#337ab7;"><center>Location</center></h3>
-                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="font-size: 20px; color:#337ab7;">
+                      <center><b><?php echo($item_code); ?>-<?php echo($project_code); ?>-<?php echo($location_code); ?>-<?php echo($remark); ?> </b></center></div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                     </div>
                     
                 </div>
 
-                <div class="row">
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="font-size: 18px"><center><?php echo($project_code); ?></center></div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="font-size: 18px"><center><?php echo($location_code); ?></center></div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-                               
-                </div>
+                <!-- <div class="row">
+
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <h3 style="color:#337ab7;"><center>Location</center></h3>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="font-size: 18px"><center><b><?php echo($location_code); ?></b></center></div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    </div>
+                    
+                </div> -->
 
         <br>      
         <div class="row">
             
 
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 thumb">
             <?php
-                            if ($project_image_fetch_data->num_rows() > 0) {
-                                foreach ($project_image_fetch_data->result() as $row) {
+                            if ($project_image_fetch_data_lhs->num_rows() > 0) {
+
+                              ?>
+                              <h4 style="color:#337ab7;"><center><b>LHS</b></center></h4>
+                              <?php
+                                foreach ($project_image_fetch_data_lhs->result() as $row) {
                                 ?>
                                 <?php if ($row->UserName == $this->session->userdata('username')) { ?>
 
-                                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumb">
 
-                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $row->ImgDate ?>"
+                                  <!-- <h4 style="color:#337ab7;"><center><b><?php echo $row->WorkSide ?></b></center></h4> -->
+                                  
+
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $row->Remark ?> <?php echo $row->ImgDate ?>"
                                     data-image="<?php echo $row->Image ?>"
                                     data-target="#image-gallery">
 
@@ -164,8 +174,97 @@
                                     src="<?php echo $row->Image ?>"
                                     alt="Another alt text">
 
+                                    <br>
+
                                     <!-- <h5><center><b><?php echo $row->ProjectCode ?> <?php echo $row->LocationCode ?> <?php echo $row->ImgDate ?></b></center></h5></a> -->
-                                    <h5><center><b><?php echo $row->ImgDate ?></b></center></h5></a>
+                                    <h5><center><b><?php echo $row->Remark ?> <?php echo $row->ImgDate ?></b></center></h5></a>
+                                    </a>
+            
+                                    
+                                    
+                                
+                                <?php
+                                }
+                                }
+                              
+                            ?>
+
+                    <?php } ?>
+                    </div>
+                    <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 thumb">
+                              </div> -->
+
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 thumb">
+                            <?php
+                            if ($project_image_fetch_data_rhs->num_rows() > 0) {
+                              ?>
+                              <h4 style="color:#337ab7;"><center><b>RHS</b></center></h4>
+                              <?php
+                                foreach ($project_image_fetch_data_rhs->result() as $row) {
+                                ?>
+                                <?php if ($row->UserName == $this->session->userdata('username')) { ?>
+
+                                  
+                                  <!-- <h4 style="color:#337ab7;"><center><b><?php echo $row->WorkSide ?></b></center></h4> -->
+                                  
+
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $row->Remark ?> <?php echo $row->ImgDate ?>"
+                                    data-image="<?php echo $row->Image ?>"
+                                    data-target="#image-gallery">
+
+                                    <img class="img-thumbnail"
+                                    src="<?php echo $row->Image ?>"
+                                    alt="Another alt text">
+
+                                    <br>
+
+                                    <!-- <h5><center><b><?php echo $row->ProjectCode ?> <?php echo $row->LocationCode ?> <?php echo $row->ImgDate ?></b></center></h5></a> -->
+                                    <h5><center><b><?php echo $row->Remark ?> <?php echo $row->ImgDate ?></b></center></h5></a>
+                                    </a>
+            
+                                    
+                                    
+                                
+                                <?php
+                                }
+                                }
+                              
+                            ?>
+
+                    <?php } ?>
+                    </div>
+
+                              </div>
+
+
+                              <div class="row">
+            
+
+            <?php
+                            if ($project_image_fetch_data_none->num_rows() > 0) {
+
+                              ?>
+                              <!-- <h4 style="color:#337ab7;"><center><b>None</b></center></h4> -->
+
+                              <?php
+
+                                foreach ($project_image_fetch_data_none->result() as $row) {
+                                ?>
+                                <?php if ($row->UserName == $this->session->userdata('username')) { ?>
+
+                                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 thumb">
+
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $row->ProjectCode ?> <?php echo $row->LocationCode ?> <?php echo $row->ImgDate ?>"
+                                    data-image="<?php echo $row->Image ?>"
+                                    data-target="#image-gallery">
+
+                                    <img class="img-thumbnail"
+                                    src="<?php echo $row->Image ?>"
+                                    alt="Another alt text">
+
+                                    <br>
+
+                                    <h5><center><b><?php echo $row->ProjectCode ?> <?php echo $row->LocationCode ?> <?php echo $row->ImgDate ?></b></center></h5></a>
                                     </a>
             
                                     </div>
@@ -181,17 +280,10 @@
 
         </div>
 
+
+        </div>
+
             
-            
-            
-
-
-
-        
-
-
-
-
            
 
 
