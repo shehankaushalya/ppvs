@@ -81,23 +81,53 @@
 
             <div class="sparkline13-hd">
                 <div class="main-sparkline13-hd">
-                    
+
                 <div class="row" style="margin-top: 60px">
 
+
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <h3 style="color:#337ab7;"><center>Project</center></h3>
                     </div>
+                    
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="form-group-inner">
+                                                                                 <div class="row">
+                                                                                     <div
+                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                         <h3 style="color:#337ab7;text-align: center;">Project</h3>
+                                                                                     </div>
+                                                                                     <div
+                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12" name="ProjectCode">
+                                                                                         <h3 style="text-align: center;"><?php echo($project_code); ?></h3>
+
+                                                                                     </div>
+                                                                                 </div>
+                        </div>
+                    </div>
+
+                    
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    </div>
+                    
+                </div>
+
+                <div class="row" style="margin-top: 50px">
+
+                    <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <h3 style="color:#337ab7;"><center>Project</center></h3>
+                    </div> -->
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                         <h3 style="color:#337ab7;"><center>Location</center></h3>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                         <h3 style="color:#337ab7;"><center>Status</center></h3>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                         <h3 style="color:#337ab7;"><center>Remark</center></h3>
                     </div>
                     
                 </div>
+                    
+                
                     
 
                 
@@ -111,15 +141,15 @@
                                 <?php if ($row->UserName == $this->session->userdata('username')) { ?>
 
                                     <div class="row" style="margin-top: 30px">
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="font-size: 18px;"><center><?php echo($project_code); ?></center></div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                                    <a class="btn btn-primary btn-block btn-lg" href="<?php echo base_url(); ?>index.php/Home/ImageView/<?php echo($item_code); ?>/<?php echo($project_code); ?>/<?php echo $row->LocationCode ?>" role="button">
+                                    <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="font-size: 18px;"><center><?php echo($project_code); ?></center></div> -->
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <a class="btn btn-primary btn-block btn-lg" href="<?php echo base_url(); ?>index.php/Home/ImageView/<?php echo($item_code); ?>/<?php echo($project_code); ?>/<?php echo $row->LocationCode ?>/<?php echo $row->Description  ?>" role="button">
                                     <?php echo $row->LocationCode  ?> 
                                     </a>
                                     </div>
                                 
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="font-size: 18px"><center><?php echo $row->Status  ?></center></div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="font-size: 18px"><center><?php echo $row->Description  ?></center></div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="font-size: 18px"><center><?php echo $row->Status  ?></center></div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="font-size: 18px"><center><?php echo $row->Description  ?></center></div>
                                     
                                
                                     </div>
