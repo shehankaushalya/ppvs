@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 12, 2021 at 09:35 AM
+-- Generation Time: Aug 13, 2021 at 09:26 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -147,6 +147,7 @@ INSERT INTO `progressmaster` (`PpdCode`, `ProjectCode`, `LocationCode`, `PhotoIt
 ('DUMMY_2021-08-05_01:53:23', 'DUMMY', 'dummy_location1', 'Bridge', '', 'http://localhost/ppvs123//uploads/images/f8300de6-bd45-45ad-a33d-5a0b3f8d2eaa2.jpg', '2021-08-05', ''),
 ('DUMMY_2021-08-09_01:51:51', 'DUMMY', 'dummy_location1', 'Bridge', 'LHS', 'http://localhost/ppvs123//uploads/images/1_-_Copy_-_Copy_-_Copy_(2)_-_Copy8.PNG', '2021-08-09', 'first'),
 ('DUMMY_2021-08-09_01:57:39', 'DUMMY', 'dummy_location1', 'Bridge', 'None', 'http://localhost/ppvs123//uploads/images/1_-_Copy_-_Copy_-_Copy_(2)7.PNG', '2021-08-25', 'first'),
+('DUMMY_2021-08-12_16:10:50', 'DUMMY', 'dummy_location1', 'Bridge', 'RHS', 'http://localhost/ppvs123//uploads/images/30cbb88a-03ed-4f50-ab7c-f1894556dd9e7.jpg', '2021-08-12', 'first'),
 ('IROAD_JAFFNA_2021-07-22_14:45:42', 'IROAD_JAFFNA', 'CEP-59+450', 'Bridge', '', 'http://localhost/ppvs123//uploads/images/1_-_Copy_-_Copy_-_Copy_(2).PNG', '2021-07-28', ''),
 ('KEKIRAWA_THALAWA_2021-07-24_01:00:04', 'KEKIRAWA_THALAWA', '10+517_LHS_Kekirawa', 'Bridge', 'LHS', 'http://localhost/ppvs123//uploads/images/7e59dd0f-a361-4ea6-9b5c-998407e58808.jpg', '2021-07-24', 'new'),
 ('KEKIRAWA_THALAWA_2021-07-24_01:00:22', 'KEKIRAWA_THALAWA', '10+517_LHS_Kekirawa', 'Culvert', 'LHS', 'http://localhost/ppvs123//uploads/images/30cbb88a-03ed-4f50-ab7c-f1894556dd9e.jpg', '2021-07-24', 'first'),
@@ -158,7 +159,9 @@ INSERT INTO `progressmaster` (`PpdCode`, `ProjectCode`, `LocationCode`, `PhotoIt
 ('NIKAWERATIYA_2021-08-12_09:10:39', 'NIKAWERATIYA', 'nikaweratiyal1', 'Bridge', 'LHS', 'http://localhost/ppvs123//uploads/images/7e59dd0f-a361-4ea6-9b5c-998407e58808_(1)3.jpg', '2021-08-12', 'first'),
 ('NIKAWERATIYA_2021-08-12_09:13:32', 'NIKAWERATIYA', 'nikaweratiyal1', 'Bridge', 'LHS', 'http://localhost/ppvs123//uploads/images/30cbb88a-03ed-4f50-ab7c-f1894556dd9e5.jpg', '2021-08-12', 'second'),
 ('NIKAWERATIYA_2021-08-12_09:14:59', 'NIKAWERATIYA', 'nikaweratiyal1', 'Bridge', 'RHS', 'http://localhost/ppvs123//uploads/images/f8300de6-bd45-45ad-a33d-5a0b3f8d2eaa3.jpg', '2021-08-12', 'third'),
-('NIKAWERATIYA_2021-08-12_09:22:03', 'NIKAWERATIYA', 'nikaweratiyal2', 'Bridge', 'None', 'http://localhost/ppvs123//uploads/images/30cbb88a-03ed-4f50-ab7c-f1894556dd9e6.jpg', '2021-08-12', 'first'),
+('NIKAWERATIYA_2021-08-12_09:22:03', 'NIKAWERATIYA', 'nikaweratiyal2', 'Bridge', 'RHS', 'http://localhost/ppvs123//uploads/images/30cbb88a-03ed-4f50-ab7c-f1894556dd9e6.jpg', '2021-08-12', 'first'),
+('NIKAWERATIYA_2021-08-12_16:18:24', 'NIKAWERATIYA', 'nikaweratiyal2', 'Bridge', 'LHS', 'http://localhost/ppvs123//uploads/images/7e59dd0f-a361-4ea6-9b5c-998407e588082.jpg', '2021-08-12', 'first'),
+('NIKAWERATIYA_2021-08-13_12:08:29', 'NIKAWERATIYA', 'nikaweratiyal1', 'Bridge', 'LHS', 'http://localhost/ppvs123//uploads/images/f8300de6-bd45-45ad-a33d-5a0b3f8d2eaa4.jpg', '2021-08-13', 'second'),
 ('NUWARAELIYA_2021-07-22_14:47:06', 'NUWARAELIYA', 'CEP-59+300', 'Bridge', '', 'http://localhost/ppvs123//uploads/images/1_-_Copy_-_Copy_(2).PNG', '2021-07-19', ''),
 ('NUWARAELIYA_2021-07-26_00:14:04', 'NUWARAELIYA', 'Bakmeedeniya_Road', 'Bridge', '', 'http://localhost/ppvs123//uploads/images/7e59dd0f-a361-4ea6-9b5c-998407e58808_(1)1.jpg', '2021-07-12', ''),
 ('NUWARAELIYA_2021-07-26_00:14:22', 'NUWARAELIYA', 'Bakmeedeniya_Road', 'Bridge', '', 'http://localhost/ppvs123//uploads/images/7e59dd0f-a361-4ea6-9b5c-998407e588081.jpg', '2021-07-28', ''),
@@ -286,7 +289,7 @@ INSERT INTO `userproject` (`ProjectCode`, `ProjectName`, `UserName`, `status`) V
 ('KIRIMETIYA', 'KIRIMETIYA ROAD (0+000 - 4+000) KM', 'shehan.k', 'unchecked'),
 ('NUWARAELIYA', 'NUWARAELIYA ROAD(98+460 - 104+460) KM', 'shehan.k', 'unchecked'),
 ('IROAD_JAFFNA', 'JAFFNA - I ROAD -04', 'shehan.k', 'unchecked'),
-('WERAGANTOTA', 'WERAGANTOTA RANDENIGALA (0+000 - 2+500 KM)', 'shehan.k', 'checked'),
+('WERAGANTOTA', 'WERAGANTOTA RANDENIGALA (0+000 - 2+500 KM)', 'shehan.k', 'unchecked'),
 ('KULIYAPITIYA', 'KULIYAPITIYA - PADIWELA', 'shehan.k', 'unchecked'),
 ('MAHIYANGANAYA', 'MAHIYANGANAYA P19 & P23', 'shehan.k', 'unchecked'),
 ('DEHIATHTHAKANDIYA', 'DEHIATHTHAKANDIYA P14 & P15', 'shehan.k', 'unchecked'),
@@ -319,7 +322,7 @@ INSERT INTO `userproject` (`ProjectCode`, `ProjectName`, `UserName`, `status`) V
 ('DUMMY55', 'DUMMY55', 'shehan.k', 'unchecked'),
 ('DUMMY66', 'DUMMY66', 'shehan.k', 'unchecked'),
 ('DUMMY77', 'DUMMY77', 'shehan.k', 'unchecked'),
-('KEKIRAWA_THALAWA', 'KEKIRAWA - THALAWA', 'shehan.k', 'checked'),
+('KEKIRAWA_THALAWA', 'KEKIRAWA - THALAWA', 'shehan.k', 'unchecked'),
 ('KEKIRAWA_THALAWA', 'KEKIRAWA - THALAWA', 'test1', 'checked'),
 ('KEKIRAWA_THALAWA', 'KEKIRAWA - THALAWA', 'test2', 'checked'),
 ('WERAGANTOTA', 'WERAGANTOTA RANDENIGALA (0+000 - 2+500 KM)', 'test2', 'checked'),
