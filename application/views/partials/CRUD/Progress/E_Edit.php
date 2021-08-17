@@ -168,7 +168,7 @@
                                                                                              </option>
                                                                                              <option>Culvert
                                                                                              </option>
-                                                                                             <option>Retaining Wall
+                                                                                             <option>Retaining_Wall
                                                                                              </option>
                                                                                              <option>Other
                                                                                              </option>
