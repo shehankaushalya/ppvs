@@ -126,13 +126,14 @@
                 <div class="row">
 
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <a href="<?php echo base_url(); ?>index.php/Home/LocationView/EMBANKMENT/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/3.png"></center>
-                                <br><h4><center><b>EMBANKMENT</b></center></h4></a>  
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <a href="<?php echo base_url(); ?>index.php/Home/LocationView/RETAINING_WALL/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/4.png"></center>
+                    <a href="<?php echo base_url(); ?>index.php/Home/LocationView/RETAINING_WALL/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/3.png"></center>
                                 <br><h4><center><b>RETAINING WALL</b></center></h4></a>    
                     </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <a href="<?php echo base_url(); ?>index.php/Home/LocationView/OTHER/<?php echo($project_code); ?>"><center><img src="<?php echo base_url(); ?>assets/new/img/4.png"></center>
+                                <br><h4><center><b>OTHER</b></center></h4></a>  
+                    </div>
+                    
                     
 
                 </div>
