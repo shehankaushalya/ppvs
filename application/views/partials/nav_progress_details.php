@@ -62,6 +62,44 @@
 }
 
 
+@media(min-width:991px) {
+    #logo {
+        visibility: hidden;
+    }
+    }
+
+
+    @media(max-width:991px) {
+    #logo {
+        visibility: visible;
+    }
+    }
+
+    @media(max-width:767px) {
+    #logo {
+        visibility: visible;
+    }
+    }
+
+    @media(max-width:480px) {
+    #logo {
+        visibility: visible;
+    }
+    }
+
+    @media(max-width:360px) {
+    #logo {
+        visibility: visible;
+    }
+    }
+
+    @media(max-width:320px) {
+    #logo {
+        visibility: visible;
+    }
+    }
+
+
 
 
 
@@ -124,11 +162,21 @@
                 <div class="row" style="margin-top: 60px">
 
                     
-                    <div class="col-lg-1 col-md-1 col-sm-1">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" id="logo">
+                    <center>
+                        <img class="main-logo" src="<?php echo base_url(); ?>assets/new/img/logo/logo.jpg" alt="logo.png" style="height:50px" />
+                       
+                    </center>
                     </div>
-                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="font-size: 20px; color:#337ab7;">
+                    
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="font-size: 20px; color:#337ab7;">
                       <center><b><?php echo($item_code); ?>-<?php echo($project_code); ?>-<?php echo($location_code); ?>-<?php echo($remark); ?> </b></center></div>
-                    <div class="col-lg-1 col-md-1 col-sm-1">
+                    
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" id="logo">
+                        <center>
+                        <img class="main-logo" src="<?php echo base_url(); ?>assets/new/img/logo/logo.png" alt="logo.png" style="height:50px" />
+                    
+                        </center>
                     </div>
                     
                 </div>
