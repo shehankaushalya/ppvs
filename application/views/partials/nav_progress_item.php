@@ -26,6 +26,47 @@
         /* width: 214px; */
         background-color: #fff0;
     }
+
+
+    @media(min-width:991px) {
+    #logo {
+        visibility: hidden;
+    }
+    }
+
+
+    @media(max-width:991px) {
+    #logo {
+        visibility: visible;
+    }
+    }
+
+    @media(max-width:767px) {
+    #logo {
+        visibility: visible;
+    }
+    }
+
+    @media(max-width:480px) {
+    #logo {
+        visibility: visible;
+    }
+    }
+
+    @media(max-width:360px) {
+    #logo {
+        visibility: visible;
+    }
+    }
+
+    @media(max-width:320px) {
+    #logo {
+        visibility: visible;
+    }
+    }
+
+
+
 </style>
 
 <div class="data-table-area mg-b-15">
@@ -84,22 +125,33 @@
                 <div class="main-sparkline13-hd">
                     <br><br><br><br>
 
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="logo">
+                    <center>
+                        <img class="main-logo" src="<?php echo base_url(); ?>assets/new/img/logo/logo.jpg" alt="logo.png" style="height:50px" />
+                       
+                    </center>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                         <div class="form-group-inner">
                                                                                  <div class="row">
                                                                                      <div
-                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                                                         class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                                                                          <h3 style="color:#337ab7;text-align: center;">Project</h3>
                                                                                      </div>
                                                                                      <div
-                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-12" name="ProjectCode">
+                                                                                         class="col-lg-8 col-md-8 col-sm-8 col-xs-8" name="ProjectCode">
                                                                                          <h3 style="text-align: center;"><?php echo($project_code); ?></h3>
 
                                                                                      </div>
                                                                                  </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+                    </div>                        
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="logo">
+                        <center>
+                        <img class="main-logo" src="<?php echo base_url(); ?>assets/new/img/logo/logo.png" alt="logo.png" style="height:50px" />
+                    
+                        </center>
+                        </div>
 
                     
             </div>
