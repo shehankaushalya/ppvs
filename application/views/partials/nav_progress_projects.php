@@ -32,7 +32,7 @@
         visibility: hidden;
     }
     #logo1 {
-        visibility: hidden;
+        visibility: visible;
     }
     }
 
@@ -146,7 +146,7 @@
                         <img class="main-logo" src="<?php echo base_url(); ?>assets/new/img/logo/logo.jpg" alt="logo.png" style="height:50px" />
                        
                     </center>
-                    <br>
+                    
                     </div>
 
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -158,7 +158,7 @@
                         <img class="main-logo" src="<?php echo base_url(); ?>assets/new/img/logo/logo.png" alt="logo.png" style="height:50px" />
                     
                     </center>
-                    <br>
+                    
                     </div>
 
 
