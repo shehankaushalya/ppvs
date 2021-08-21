@@ -41,7 +41,7 @@
   margin-bottom: 15px;
 }
 
-.modal-dialog {
+.modal-dialog1 {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -337,7 +337,7 @@
 
 
         <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog1 modal-lg">
                 <div class="modal-content">
                 <br><br><br><br><br>
                     <div class="modal-header">
