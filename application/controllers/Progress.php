@@ -37,7 +37,7 @@ class Progress extends CI_Controller
             
             $this->load->view('progress', $data);
         } else {
-            redirect('Home/PpvsHome');
+            redirect('Home/DocmsHome');
         }
     }
 
@@ -60,7 +60,7 @@ class Progress extends CI_Controller
             
     //      }else{ 
 
-    //         // redirect('Home/PpvsHome');
+    //         // redirect('Home/DocmsHome');
     //         print_r($this->upload->display_errors());
     //      } 
         
@@ -118,7 +118,7 @@ class Progress extends CI_Controller
                 
             }else{ 
     
-                // redirect('Home/PpvsHome');
+                // redirect('Home/DocmsHome');
                 // print_r($this->upload->display_errors());
                 $this->session->set_flashdata('errmsg', 'Something Went Wrong');
                 redirect('Progress/progressView');
@@ -162,7 +162,7 @@ class Progress extends CI_Controller
             $data["progress_fetch_data"] = $this->Model_progress->progress_fetch_data();
             $this->load->view('progress', $data);
         } else {
-            redirect('Home/PpvsHome');
+            redirect('Home/DocmsHome');
         }
     }
 
@@ -247,7 +247,7 @@ class Progress extends CI_Controller
 
     //         $this->load->model("Model_progress");
     //         $data["project_progress_fetch_data"] = $this->Model_progress->project_progress_fetch_data();
-    //         $this->load->view('PpvsHome', $data);
+    //         $this->load->view('DocmsHome', $data);
         
     // }
 

@@ -123,7 +123,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="slide-article">
                                     <h1 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Welcome to
-                                        the Project Progress Visualization System</h1>
+                                        the Document Management System</h1>
                                     <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s">Powered by
                                         NEM-ERP Engineering & Research Unit
 

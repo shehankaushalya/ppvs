@@ -15,7 +15,7 @@ class User extends CI_Controller
     {
 
         if ($this->session->userdata('username') != "") {
-            $this->load->view('PpvsHome.php');
+            $this->load->view('DocmsHome.php');
         } else {
             $this->session->set_flashdata('errmsg', 'Wrong Username or Password');
             redirect('User/Login');
@@ -49,7 +49,7 @@ class User extends CI_Controller
     public function Login()
     {
         if ($this->session->userdata('username') != "") {
-            $this->load->view('PpvsHome.php');
+            $this->load->view('DocmsHome.php');
         } else {
 
             $this->form_validation->set_rules('username', 'username', 'required');
@@ -106,8 +106,8 @@ class User extends CI_Controller
                     );
                     $this->session->set_userdata($user_data);
                     $this->session->set_flashdata('msg1', 'Welcome back');
-                    // $this->load->view('PpvsHome');
-                    redirect('Home/PpvsHome');
+                    // $this->load->view('DocmsHome');
+                    redirect('Home/DocmsHome');
                 } else {
                     $this->session->set_flashdata('errmsg', 'Wrong Username or Password');
                     redirect('User/index');
@@ -205,7 +205,7 @@ class User extends CI_Controller
 
             $this->load->view('user', $data);
         } else {
-            redirect('Home/PpvsHome');
+            redirect('Home/DocmsHome');
         }
     }
 

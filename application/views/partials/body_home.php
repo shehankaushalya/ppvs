@@ -393,8 +393,8 @@ display:none;
   <div class="sidenav">
     <br>
             <div class="">
-         <a href="<?php echo base_url(); ?>index.php/Home/PpvsHome"><img class="main-logo" style="margin-left:40px"
-                        src="<?php echo base_url(); ?>assets/new/img/logo/logo.jpg" alt="" /></a>
+         <a href="<?php echo base_url(); ?>index.php/Home/DocmsHome"><img class="main-logo" style="margin-left:40px"
+                        src="<?php echo base_url(); ?>assets/new/img/logo/1logo.png" alt="" /></a>
                
             </div>
             <br>
@@ -404,27 +404,8 @@ display:none;
                     <ul class="metismenu" id="menu1">
 
 
-                        <?php if ($this->session->userdata('ProjectView') == "checked") { ?>
-                        <li>
-
-                            <a href="<?php echo base_url(); ?>index.php/Project/projects" <?php if (uri_string() == 'Project/projects') { ?>
-                                style="color:#337ab7; border:outset" <?php } ?>>
-                                <img src="<?php echo base_url(); ?>assets/new/img/BodyPNG/project.png">
-                                <span class="mini-click-non" style='font-size:12px;'>Projects</span>
-                            </a>
-
-                        </li>
-                        <?php
-                        } ?>
-                        <?php if ($this->session->userdata('LocationView') == "checked") { ?>
-                        <li>
-                            <a href="<?php echo base_url(); ?>index.php/Location/ClearLacation" <?php if (uri_string() == 'Location/locationView') { ?>
-                                style="color:#337ab7;border:outset" <?php } ?> aria-expanded="false">
-                                <img src="<?php echo base_url(); ?>assets/new/img/BodyPNG/location.png"> <span
-                                    class="mini-click-non" style='font-size:12px;'>Location</span></a>
-                        </li>
-                        <?php
-                        } ?>
+                        
+                        
 
                         <?php if ($this->session->userdata('UserView') == "checked") { ?>
                         <li>
@@ -454,7 +435,7 @@ display:none;
 
 
                         <li>
-                            <a href="<?php echo base_url(); ?>index.php/Home/PpvsHome" <?php if (uri_string() == 'Home/PpvsHome') { ?>
+                            <a href="<?php echo base_url(); ?>index.php/Home/DocmsHome" <?php if (uri_string() == 'Home/DocmsHome') { ?>
                                 style="color:#337ab7;border:outset" <?php } ?>></span>
                                 <img src="<?php echo base_url(); ?>assets/new/img/BodyPNG/Home.png">
                                 <span class="mini-click-non" style='font-size:12px;'>Home</span></a>
@@ -502,26 +483,8 @@ display:none;
                                     <nav id="dropdown">
                                         <ul class="mobile-menu-nav">
 
-                                            <?php if ($this->session->userdata('ProjectView') == "checked") { ?>
-                                            <li><a data-toggle="collapse" data-target="#Charts"
-                                                    href="<?php echo base_url(); ?>index.php/Project/projects">Projects
-                                                    <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                                <ul class="collapse dropdown-header-top">
-
-                                                </ul>
-                                            </li>
-                                            <?php
-                                            } ?>
-                                            <?php if ($this->session->userdata('LocationView') == "checked") { ?>
-                                            <li><a data-toggle="collapse" data-target="#demoevent"
-                                                    href="<?php echo base_url(); ?>index.php/Location/ClearLacation">Location
-                                                    <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                                <ul id="demoevent" class="collapse dropdown-header-top">
-
-                                                </ul>
-                                            </li>
-                                            <?php
-                                            } ?>
+                                            
+                                            
                                             <?php if ($this->session->userdata('UserView') == "checked") { ?>
                                             <li><a data-toggle="collapse" data-target="#demopro"
                                                     href="<?php echo base_url(); ?>index.php/User/users">Users
@@ -546,7 +509,7 @@ display:none;
 
                                             
                                             <li><a data-toggle="collapse" data-target="#formsmob"
-                                                    href="<?php echo base_url(); ?>index.php/Home/PpvsHome">Home <span
+                                                    href="<?php echo base_url(); ?>index.php/Home/DocmsHome">Home <span
                                                         class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                                 <ul id="formsmob" class="collapse dropdown-header-top">
 

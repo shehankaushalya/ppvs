@@ -11,7 +11,7 @@ class Permission extends CI_Controller
         if ($this->session->userdata('PermissionSetup') == "checked") {
             redirect('Permisson/permissionView');
         } else {
-            redirect('Home/PpvsHome');
+            redirect('Home/DocmsHome');
         }
     }
 
@@ -26,7 +26,7 @@ class Permission extends CI_Controller
             $data["user_permission_data"] = $this->Model_permission->user_permission_data();
             $this->load->view('permission', $data);
         } else {
-            redirect('Home/PpvsHome');
+            redirect('Home/DocmsHome');
         }
     }
 
