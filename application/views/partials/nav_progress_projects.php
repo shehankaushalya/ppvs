@@ -225,9 +225,9 @@
                 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"></div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="logo1">
                     <center>
-                        <img class="main-logo" src="<?php echo base_url(); ?>assets/new/img/logo/logo.png" alt="logo.png" style="height:100px" />
-                        <h5>NEM Construction (Pvt) Ltd <br>
-                        Project Progress Visualization System</h5>
+                        <img class="main-logo" src="<?php echo base_url(); ?>assets/new/img/logo/logo.png" alt="logo.png" style="height:75px" />
+                        <h6>NEM Construction (Pvt) Ltd <br>
+                        Project Progress Visualization System</h6>
 
                     </center>
                 <br>
